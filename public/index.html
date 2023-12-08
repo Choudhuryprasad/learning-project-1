@@ -1,0 +1,979 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;1,400&family=Ubuntu&family=Ubuntu+Condensed&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+    <title>Name</title>
+</head>
+
+<script>
+
+    // js for login
+
+    let username1 = document.getElementById('username1').value
+    let password1 = document.getElementById('eye').value
+
+
+    function sendinfo() {
+        console.log(document.getElementById('username1').value)
+        console.log(document.getElementById('eye').value)
+
+        axios.post('http://localhost:2001/sendinfo', {
+            username: document.getElementById('username1').value,
+            password: document.getElementById('eye').value
+        }).then((result) => {
+            window.location.href = 'http://localhost:2001/#'
+        }).catch((err) => {
+            console.log(err)
+        })
+
+        setTimeout(() => {
+            var gig = document.getElementById('alert-2')
+
+            gig.style.display = "flex"
+        }, 2000);
+    }
+
+</script>
+
+<script>
+
+    //js for registration
+
+    function validateAndRegister() {
+        var username = document.getElementById("username").value;
+        var email = document.getElementById("email").value;
+        var password = document.getElementById("eye4").value;
+        var repeatpassword = document.getElementById("eye5").value;
+        var image = document.getElementById("pic").value
+
+        //username, email, and passwords are not empty
+        if (username.trim() === "" || email.trim() === "" || password.trim() === "" || repeatpassword.trim() === "") 
+        {
+            alert("Please fill in all fields.");
+            return;
+        }
+
+        // password match
+        if (password !== repeatpassword) {
+            alert("Passwords do not match.");
+            return;
+        }
+
+        // If all conditions pass
+        senddata();
+        toggle();
+    }
+
+    function senddata() {
+        console.log(document.getElementById('username').value)
+        console.log(document.getElementById('email').value)
+        console.log(document.getElementById('eye4').value)
+        console.log(document.getElementById('eye5').value)
+        console.log(document.getElementById('pic').value)
+
+        axios.post('http://localhost:2001/senddata', {
+            username: document.getElementById('username').value,
+            email: document.getElementById('email').value,
+            password: document.getElementById('eye4').value,
+            image: document.getElementById('pic').value
+        }).then((result) => {
+            Window.location.href = 'http://localhost:2001'
+        }).catch((err) => {
+            console.log(err)
+        });
+
+        setTimeout(() => {
+            var gig = document.getElementById('alert-1')
+
+            gig.style.display = "flex"
+        }, 2000);
+    }
+
+
+
+</script>
+
+<script>
+    function sendemail() {
+        console.log(document.getElementById('femail').value)
+
+        axios.post('http://localhost:2001/sendemail', {
+            email: document.getElementById('femail').value
+        }).then((result) => {
+            window.location.href = 'http://localhost:2001'
+        }).catch((err) => {
+            console.log(err)
+        })
+    }
+
+
+</script>
+
+<script>
+    function sendotp() {
+        console.log(document.getElementById('otp').value)
+
+        axios.post('http://localhost:2001/sendotp', {
+            otp: document.getElementById('otp').value
+        }).then((result) => {
+            window.location.href = "http://localhost:2001/#";
+            return     
+        }).catch((err) => {
+            console.log(err)
+        })
+    }
+
+</script>
+
+<body>
+
+    <div class="hotel" id="blur">
+
+        <!--Nav bar content-->
+
+        <div class="navbar">
+            <div class="box">
+                <i class='fa-solid fa-apple-whole fa-9x'></i>
+            </div>
+            <div class="items">
+                <a href="index.html">HOME</a>
+                <a href="resturant.html">RESTURANT</a>
+                <a href="#review">REVIEW</a>
+                <a href="#about">ABOUT</a>
+            </div>
+
+            <div class="btn">
+                <i class="fa-solid fa-right-to-bracket"></i>
+                <a class="sing-up" onclick="toggle()-ask()" id="si">Sing Up</a>
+                <button type="button" onclick="toggle()-ask()" id="lo">Login</button>
+                <img src="user.png" id="im">
+            </div>
+        </div>
+
+        <!--Cart-->
+
+        <button type="button" id="cart" onclick="cart()">
+            <i class="fa-solid fa-cart-plus"></i>
+            <p id="coount">0</p>
+        </button>
+
+        <!--Main content-->
+
+        <div class="main">
+            <div class="left">
+                <p class="emoji"><img src="smile.png">Effortless dining, extraordinary delivery</p>
+                <h3>Order Tasty &</h3>
+                <h3>Fresh Food</h3>
+                <span id="element"></span>
+                <p>Savor the flavor, delivered to your door</p>
+                <button type="button"><a href="menuu.html">Order now</a></button>
+            </div>
+            <div class="star">
+                <div class="z">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+                <div class="a">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+                <div class="b">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+                <div class="c">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+                <div class="d">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+                <div class="y">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+            </div>
+            <div class="right">
+
+                <div class="img">
+                    <img src="" id="image">
+                </div>
+            </div>
+        </div>
+
+        <!--button-->
+
+        <div id="boxs" class="boxs">
+            <div class="button">
+                <button type="button" onclick="bt1()"><i class="fa-solid fa-arrow-right"></i></button>
+                <button type="button" onclick="bt2()"><i class="fa-solid fa-arrow-left"></i></button>
+            </div>
+
+            <!--Items-->
+            <div class="carrd1" id="card1">
+                <div class="cards">
+                    <div class="content">
+                        <img src="Chicken-Biryani-Recipe.jpg">
+                        <h2>Dum Biryani</h2>
+                        <div class="st">
+                            <div class="sts">
+                                5.0 <i class="fa-solid fa-star"></i>
+                            </div>
+                            <div class="pr">
+                                INR: 170.00/-
+                            </div>
+                        </div>
+
+                        <div class="al">
+                            <a href="menuu.html">Order now -></a>
+                        </div>
+                        <div class="btnn">
+                            <button type="button" onclick="but1()">
+                                <i class="fa-solid fa-cart-shopping"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cards">
+                    <div class="content">
+                        <img src="8401873-ad2429ae1858464a92229875c91c093d.jpg">
+                        <h2>Special Pasta</h2>
+                        <div class="st">
+                            <div class="sts">
+                                4.8 <i class="fa-solid fa-star"></i>
+                            </div>
+                            <div class="pr">
+                                INR: 270.00/-
+                            </div>
+                        </div>
+
+                        <div class="al">
+                            <a href="menuu.html">Order now -></a>
+                        </div>
+                        <div class="btnn">
+                            <button type="button" onclick="but2()"><i class="fa-solid fa-cart-shopping"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cards">
+                    <div class="content">
+                        <img src="download.jpeg">
+                        <h2>Chicken Kabab</h2>
+                        <div class="st">
+                            <div class="sts">
+                                4.0 <i class="fa-solid fa-star"></i>
+                            </div>
+                            <div class="pr">
+                                INR: 250.00/-
+                            </div>
+                        </div>
+
+                        <div class="al">
+                            <a href="menuu.html">Order now -></a>
+                        </div>
+                        <div class="btnn">
+                            <button type="button" onclick="but3()"><i class="fa-solid fa-cart-shopping"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="carrd2" id="card2">
+                <div class="cards">
+                    <div class="content">
+                        <img src="pizza.jpg">
+                        <h2>Ultimate Pizza</h2>
+                        <div class="st">
+                            <div class="sts">
+                                4.7 <i class="fa-solid fa-star"></i>
+                            </div>
+                            <div class="pr">
+                                INR: 240.00/-
+                            </div>
+                        </div>
+
+                        <div class="al">
+                            <a href="menuu.html">Order now -></a>
+                        </div>
+                        <div class="btnn">
+                            <button type="button" onclick="but4()"><i class="fa-solid fa-cart-shopping"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cards">
+                    <div class="content">
+                        <img src="roll.jpg">
+                        <h2>Chicken Roll</h2>
+                        <div class="st">
+                            <div class="sts">
+                                4.9 <i class="fa-solid fa-star"></i>
+                            </div>
+                            <div class="pr">
+                                INR: 90.00/-
+                            </div>
+                        </div>
+                        <div class="al">
+                            <a href="menuu.html">Order now -></a>
+                        </div>
+                        <div class="btnn">
+                            <button type="button" onclick="but5()"><i class="fa-solid fa-cart-shopping"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+
+    <div class="footer" id="blur1">
+        <div class="row">
+            <div class="p">
+                <div class="box">
+                    <i class='fa-solid fa-apple-whole fa-9x'></i>
+                </div>
+                <p>Logo Name</p>
+            </div>
+            <div class="p">
+                <h3>Office <div class="underline"><span></span></div>
+                </h3>
+                <p>GIET University</p>
+                <p>Gunupur, Rayagada</p>
+                <p>Odisha, PIN 765022, India</p>
+                <p class="email-id">name@gmail.com</p>
+                <h4>+91 - 1234567890</h4>
+            </div>
+            <div class="p">
+                <h3>Links<div class="underline"><span></span></div>
+                </h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="resturant.html">Resturant</a></li>
+                    <li><a href=" ">Review</a></li>
+                    <li><a href=" ">About</a></li>
+                </ul>
+            </div>
+            <div class="p">
+                <h3>Comment<div class="underline"><span></span></div>
+                </h3>
+                <form>
+                    <i class="fa-regular fa-comment"></i>
+                    <input type="text" placeholder="Enter your comment ...">
+                    <button type="submit"><i class="fa-solid fa-arrow-right"></i></button>
+                </form>
+                <div class="social">
+                    <i class="fa-brands fa-facebook-f" id="face"></i>
+                    <i class="fa-brands fa-whatsapp" id="what"></i>
+                    <i class="fa-brands fa-twitter" id="twite"></i>
+                    <i class="fa-brands fa-linkedin-in" id="link"></i>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <p class="copy">© 2023 - All Rights Reserved</p>
+    </div>
+
+    <div id="popup">
+
+        <div class="ask">
+            <div class="asker">
+                <h2>LOGIN FOR</h2>
+                <button id="res" onclick="next()">Resturant Partner</button>
+                <button id="cus" onclick="register()">Customer</button>
+            </div>
+        </div>
+
+        <div class="loginbox">
+            <div id="form1">
+                <h2>LOGIN FORM</h2>
+
+                <div class="inputbox">
+                    <span class="icon"><i class="fa-solid fa-user"></i>
+                    </span>
+                    <input type="name" id="username1" required>
+                    <label>Username</label>
+                </div>
+
+                <div class="inputbox">
+                    <span class="icon">
+                        <i class="fa-solid fa-eye-slash" onclick="eye()"></i>
+                    </span>
+                    <input type="password" id="eye" required>
+                    <label>Password</label>
+                </div>
+
+                <div class="bb">
+                    <button type="button" onclick="toggle(); sendinfo()">Login</button>
+                </div>
+                <div class="register-link">
+                    <p>Don't have an account?<a href="#" onclick="register()">
+                            Register Here
+                        </a> <br>
+                        <a href="#" id="forget" onclick="forget()">
+                            Forget Password
+                        </a>
+                    </p>
+                    <ion-icon name="heart"></ion-icon>
+                </div>
+
+            </div>
+
+            <div class="form2">
+
+                <h2>REGISTER FORM</h2>
+                <div class="inputbox">
+                    <span class="icon"><i class="fa-solid fa-user"></i>
+                    </span>
+                    <input type="name" id="username" required>
+                    <label>Username</label>
+                </div>
+                <div class="inputbox">
+                    <span class="icon">
+                        <i class="fa-solid fa-envelope"></i>
+                    </span>
+                    <input type="text" id="email" required>
+                    <label>Email</label>
+                </div>
+                <div class="inputbox">
+                    <span class="icon">
+                        <i class="fa-solid fa-eye-slash" onclick="eye4()"></i>
+                    </span>
+                    <input type="password" id="eye4" required>
+                    <label>Password</label>
+                </div>
+                <div class="inputbox">
+                    <span class="icon">
+                        <i class="fa-solid fa-eye-slash" onclick="eye5()"></i>
+                    </span>
+                    <input type="password" id="eye5" required>
+                    <label> Confirm Password</label>
+
+                </div>
+
+                <div class="inputbox">
+                    <span class="icon">
+                        <i class="fa-solid fa-camera" id="piic" onclick="pic()"></i>
+                    </span>
+                    <input type="file" id="pic" name="fieldName" enctype="multipart/form-data">
+                    <label>Upload Your Pic</label>
+                </div>
+
+                <div class="bb">
+                    <button type="button" onclick="validateAndRegister()">Register</button>
+                </div>
+                <div class="register-link">
+                    <p>Have an account?<a href="#" onclick="login()">
+                            Login Here
+                        </a></p>
+                    <ion-icon name="heart"></ion-icon>
+                </div>
+
+
+            </div>
+
+            <div id="form3">
+                <h2>FORGET PASSWORD</h2>
+
+                <div class="inputbox">
+                    <span class="icon">
+                        <i class="fa-solid fa-envelope"></i>
+                    </span>
+                    <input type="text" id="femail" required>
+                    <label>Email</label>
+                </div>
+
+                <div class="inputbox">
+                    <span class="icon"><i class="fa-solid fa-arrows-rotate" onclick="sendemail()"></i>
+                    </span>
+                    <input type="name" required>
+                    <label>OTP</label>
+                </div>
+
+                <div class="inputbox">
+                    <span class="icon">
+                        <i class="fa-solid fa-eye-slash" oninput="sendotp();" onclick="eye1()"></i>
+                    </span>
+                    <input type="password" id="eye1" required>
+                    <label>Old Password</label>
+                </div>
+                <div class="inputbox">
+                    <span class="icon">
+                        <i class="fa-solid fa-eye-slash" onclick="eye2()"></i>
+                    </span>
+                    <input type="password" id="eye2" required>
+                    <label>New Password</label>
+                </div>
+
+                <div class="inputbox">
+                    <span class="icon">
+                        <i class="fa-solid fa-eye-slash" onclick="eye3()"></i>
+                    </span>
+                    <input type="password" id="eye3" required>
+                    <label>Rewrite Password</label>
+                </div>
+
+                <div class="bb">
+                    <button type="button" onclick="toggle()">Submit</button>
+                </div>
+                <div class="register-link">
+                    <p>Don't have an account?<a href="#" onclick="register()">
+                            Register Here
+                        </a> <br>
+                        <a href="#" id="forget" onclick="login()">
+                            Login
+                        </a>
+                    </p>
+                    <ion-icon name="heart"></ion-icon>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <div id="popup2">
+        <h2>CART</h2>
+        <div class="cart2">
+            <div class="cart">
+                <div id="space">
+                    <div class="l">
+                        <img src="Chicken-Biryani-Recipe.jpg">
+                    </div>
+                    <div class="r">
+                        <p>Dum Biryani <span id="qan1">(1)</span> <br>INR: 170.00/-</p>
+                        <button onclick="b1()"><i class="fa-solid fa-xmark"></i></button>
+                    </div>
+                </div>
+
+                <div id="space1">
+                    <div class="l">
+                        <img src="8401873-ad2429ae1858464a92229875c91c093d.jpg">
+                    </div>
+                    <div class="r">
+                        <p>Special Pasta <span id="qan2">(1)</span> <br>INR: 270.00/-</p>
+                        <button onclick="b2()"><i class="fa-solid fa-xmark"></i></button>
+                    </div>
+                </div>
+
+                <div id="space2">
+                    <div class="l">
+                        <img src="download.jpeg">
+                    </div>
+                    <div class="r">
+                        <p>Chicken Kabab <span id="qan3">(1)</span> <br>INR: 250.00/-</p>
+                        <button onclick="b3()"><i class="fa-solid fa-xmark"></i></button>
+                    </div>
+                </div>
+
+                <div id="space3">
+                    <div class="l">
+                        <img src="pizza.jpg">
+                    </div>
+                    <div class="r">
+                        <p>Ultimate Pizza <span id="qan4">(1)</span> <br>INR: 240.00/-</p>
+                        <button onclick="b4()"><i class="fa-solid fa-xmark"></i></button>
+                    </div>
+                </div>
+
+                <div id="space4">
+                    <div class="l">
+                        <img src="roll.jpg">
+                    </div>
+                    <div class="r">
+                        <p>Chicken Roll <span id="qan5">(1)</span> <br>INR: 90.00/-</p>
+                        <button onclick="b5()"><i class="fa-solid fa-xmark"></i></button>
+                    </div>
+                </div>
+
+
+                <div id="bill">
+                    <div class="lef">
+                        <button onclick="cart()">Close</button>
+                    </div>
+                    <div class="rig">
+                        <button><a href="menuu.html">Order Now at </a><span id="tot">0</span></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['anywhere !', 'anytime !', 'anyday !', 'Lets order...'],
+            typeSpeed: 150,
+        });
+
+
+        var slide = ['food.jpg', 'food1.avif', 'food2.avif', 'food3.avif']
+
+        var start = 0
+        var imageduration = 5000
+
+        function slidershow() {
+            document.getElementById('image').src = slide[start]
+            start++
+            if (start == slide.length) {
+                start = 0
+            }
+            setTimeout("slidershow()", imageduration)
+        }
+        slidershow()
+
+    </script>
+
+    <script type="text/javascript">
+
+        function toggle() {
+
+            var blur = document.getElementById('blur');
+            blur.classList.toggle('active');
+
+            var blur = document.getElementById('blur1');
+            blur.classList.toggle('active');
+
+            var popup = document.getElementById('popup');
+            popup.classList.toggle('active');
+        }
+
+        function pic() {
+            var qq = document.getElementById('pic');
+            qq.click();
+        }
+
+        //when password will be verified than it removee the login and sign-up and popup the image of user
+        function verify() {
+            var picu = document.getElementById('lo');
+            picu.style.display = "none";
+            var picu1 = document.getElementById('si');
+            picu1.style.display = "none";
+            var im = document.getElementById('im');
+            im.style.display = "block";
+        }
+
+        var a;
+        function eye() {
+            if (a == 1) {
+                document.getElementById('eye').type = 'password';
+                a = 0;
+            }
+            else {
+                document.getElementById('eye').type = 'text';
+                a = 1;
+            }
+        }
+
+        function eye1() {
+            if (a == 1) {
+                document.getElementById('eye1').type = 'password';
+                a = 0;
+            }
+            else {
+                document.getElementById('eye1').type = 'text';
+                a = 1;
+            }
+        }
+
+        function eye2() {
+            if (a == 1) {
+                document.getElementById('eye2').type = 'password';
+                a = 0;
+            }
+            else {
+                document.getElementById('eye2').type = 'text';
+                a = 1;
+            }
+        }
+
+        function eye3() {
+            if (a == 1) {
+                document.getElementById('eye3').type = 'password';
+                a = 0;
+            }
+            else {
+                document.getElementById('eye3').type = 'text';
+                a = 1;
+            }
+        }
+
+        function eye4() {
+            if (a == 1) {
+                document.getElementById('eye4').type = 'password';
+                a = 0;
+            }
+            else {
+                document.getElementById('eye4').type = 'text';
+                a = 1;
+            }
+        }
+
+        function eye5() {
+            if (a == 1) {
+                document.getElementById('eye5').type = 'password';
+                a = 0;
+            }
+            else {
+                document.getElementById('eye5').type = 'text';
+                a = 1;
+            }
+        }
+
+        function ask() {
+            var on = document.getElementsByClassName('form2')[0];
+            on.style.display = "none";
+            var u = document.getElementsByClassName('ask')[0];
+            u.style.display = "block";
+            var off = document.getElementById('form1');
+            off.style.display = "none";
+            var form = document.getElementById('form3');
+            form.style.display = "none";
+            var up = document.getElementById('popup');
+            up.style.width = "370px";
+            var ss = document.getElementsByClassName('loginbox')[0];
+            ss.style.display = "none";
+        }
+
+        function next() {
+            window.location.href = 'index2.html';
+        }
+
+        function register() {
+            var on = document.getElementsByClassName('form2')[0];
+            on.style.display = "block";
+            var u = document.getElementsByClassName('ask')[0];
+            u.style.display = "none";
+            var off = document.getElementById('form1');
+            off.style.display = "none";
+            var form = document.getElementById('form3');
+            form.style.display = "none";
+            var up = document.getElementById('popup');
+            up.style.width = "400px";
+            var ss = document.getElementsByClassName('loginbox')[0];
+            ss.style.display = "block";
+
+        }
+
+        function login() {
+            var on = document.getElementsByClassName('form2')[0];
+            on.style.display = "none";
+            var u = document.getElementsByClassName('ask')[0];
+            u.style.display = "none";
+            var off = document.getElementById('form1');
+            off.style.display = "block";
+            var form = document.getElementById('form3');
+            form.style.display = "none";
+            var up = document.getElementById('popup');
+            up.style.width = "370px";
+            var ss = document.getElementsByClassName('loginbox')[0];
+            ss.style.display = "block";
+        }
+
+        function forget() {
+            var on = document.getElementsByClassName('form2')[0];
+            on.style.display = "none";
+            var u = document.getElementsByClassName('ask')[0];
+            u.style.display = "none";
+            var off = document.getElementById('form1');
+            off.style.display = "none";
+            var form = document.getElementById('form3');
+            form.style.display = "block";
+            var up = document.getElementById('popup');
+            up.style.width = "400px";
+            var ss = document.getElementsByClassName('loginbox')[0];
+            ss.style.display = "block";
+        }
+
+        function bt1() {
+            var a = document.getElementById('card1');
+            a.style.display = "none";
+            var b = document.getElementById('card2');
+            b.style.display = "flex";
+        }
+
+        function bt2() {
+            var e = document.getElementById('card1');
+            e.style.display = "flex";
+            var f = document.getElementById('card2');
+            f.style.display = "none";
+        }
+
+    </script>
+
+    <script>
+
+        function cart() {
+
+            var blur = document.getElementById('blur');
+            blur.classList.toggle('active');
+
+            var blur = document.getElementById('blur1');
+            blur.classList.toggle('active');
+
+            var popup = document.getElementById('popup2');
+            popup.classList.toggle('active');
+
+        }
+
+        var arr1 = [170, 270, 250, 240, 90];
+
+        var z = document.getElementById('space');
+        var y = document.getElementById('space1');
+        var x = document.getElementById('space2');
+        var w = document.getElementById('space3');
+        var v = document.getElementById('space4');
+
+        var tot = 0;
+
+        var qan = 0;
+
+        var aa = 0;
+        var bb = 0;
+        var cc = 0;
+        var dd = 0;
+        var ee = 0;
+
+        var qanti = document.getElementById('coount');
+
+        function but1() {
+            z.style.display = "flex";
+            tot = tot + arr1[0];
+            document.getElementById('tot').innerText = tot;
+            qan++;
+            qanti.innerText = qan;
+            aa++;
+            document.getElementById('qan1').innerText = "(" + aa + ")";
+        }
+
+        function but2() {
+            y.style.display = "flex";
+            tot = tot + arr1[1];
+            document.getElementById('tot').innerText = tot;
+            qan++;
+            qanti.innerText = qan;
+            bb++;
+            document.getElementById('qan2').innerText = "(" + bb + ")";
+        }
+
+        function but3() {
+            x.style.display = "flex";
+            tot = tot + arr1[2];
+            document.getElementById('tot').innerText = tot;
+            qan++;
+            qanti.innerText = qan;
+            cc++;
+            document.getElementById('qan3').innerText = "(" + cc + ")";
+        }
+
+        function but4() {
+            w.style.display = "flex";
+            tot = tot + arr1[3];
+            qan++;
+            document.getElementById('tot').innerText = tot;
+            qanti.innerText = qan;
+            dd++;
+            document.getElementById('qan4').innerText = "(" + dd + ")";
+        }
+
+        function but5() {
+            v.style.display = "flex";
+            tot = tot + arr1[4];
+            qan++;
+            qanti.innerText = qan;
+            document.getElementById('tot').innerText = tot;
+            ee++;
+            document.getElementById('qan5').innerText = "(" + ee + ")";
+        }
+
+        function b1() {
+            tot = tot - arr1[0];
+            document.getElementById('tot').innerText = tot;
+            qan--;
+            qanti.innerText = qan;
+            aa--;
+            document.getElementById('qan1').innerText = "(" + aa + ")";
+            if (aa == 0) {
+                z.style.display = "none";
+            }
+        }
+
+        function b2() {
+            y.style.display = "none";
+            tot = tot - arr1[1];
+            document.getElementById('tot').innerText = tot;
+            qan--;
+            qanti.innerText = qan;
+            bb--;
+            document.getElementById('qan2').innerText = "(" + bb + ")";
+            if (bb == 0) {
+                z.style.display = "none";
+            }
+        }
+
+        function b3() {
+            x.style.display = "none";
+            tot = tot - arr1[2];
+            document.getElementById('tot').innerText = tot;
+            qan--;
+            qanti.innerText = qan;
+            cc--;
+            document.getElementById('qan3').innerText = "(" + cc + ")";
+            if (cc == 0) {
+                z.style.display = "none";
+            }
+        }
+
+        function b4() {
+            w.style.display = "none";
+            tot = tot - arr1[3];
+            document.getElementById('tot').innerText = tot;
+            qan--;
+            qanti.innerText = qan;
+            dd--;
+            document.getElementById('qan4').innerText = "(" + dd + ")";
+            if (dd == 0) {
+                z.style.display = "none";
+            }
+        }
+
+        function b5() {
+            v.style.display = "none";
+            tot = tot - arr1[4];
+            document.getElementById('tot').innerText = tot;
+            qan--;
+            qanti.innerText = qan;
+            ee--;
+            document.getElementById('qan5').innerText = "(" + ee + ")";
+            if (ee == 0) {
+                z.style.display = "none";
+            }
+        }
+
+    </script>
+
+</body>
+
+</html>

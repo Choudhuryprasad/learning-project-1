@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="resturant2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap" rel="stylesheet">
+    <script src="app.js"></script>
+
+    <title>Resturant_2</title>
+
+</head>
+
+<body>
+
+    <!--Menu-->
+
+    <div class="menu" id="blur">
+
+        <!--Navbar-->
+
+        <div class="navbar">
+            <div class="box">
+                <i class='fa-solid fa-apple-whole fa-9x'></i>
+            </div>
+            <div class="items">
+                <a href="index.html"><i class="fa-solid fa-house"></i></a>
+                <a href="#cart"><i class="fa-solid fa-cart-shopping"></i></a>
+                <a href="#about"><i class="fa-solid fa-address-book"></i>
+                    <a href="#setting"><i class="fa-solid fa-bars"></i></a>
+            </div>
+
+        </div>
+
+        <!--Main-->
+
+        <div class="main">
+
+            <div class="not">
+                <p>Sorry we are not at your place ...</p>
+            </div>
+
+            <div class="search">
+                <input type="text" placeholder="Resturents Near you" id="searchInput" onkeyup="searchString()">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+
+            <div class="head">
+                <h3><i class="fa-solid fa-utensils"></i> Popular Resturents At Your Location</h3>
+            </div>
+
+            <div class="p">
+                <p>We are trying our best to open our branches in every cities of India ...</p>
+            </div>
+
+            <div class="container" id="searchResults">
+
+                <div class="content" id="1">
+                    <a href="menuu.html">Agra Resturents <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+
+                <div class="content" id="2">
+                    <a href="menuu.html">Ahmedabad Resturents <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+
+                <div class="content" id="3">
+                    <a href="menuu.html">Ajmer Resturents <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+
+                <div class="content" id="4">
+                    <a href="menuu.html">Alappuzha Resturents <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+
+                <div class="content" id="5">
+                    <a href="menuu.html">Allahabad Resturents <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+
+                <div class="content" id="6">
+                    <a href="menuu.html">Amravati Resturents <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+
+                <div class="content" id="7">
+                    <a href="menuu.html">Amritsar Resturents <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+
+                <div class="content" id="8">
+                    <a href="menuu.html">Aurangabad Resturents <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+
+                <div class="content" id="9">
+                    <a href="menuu.html">Bengaluru Resturents <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+
+                <div class="content" id="10">
+                    <a href="menuu.html">Bhopal Resturents <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+
+                <div class="content" id="11">
+                    <a href="menuu.html">Bhubaneswar Resturents <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+
+                <div class="content" id="12">
+                    <a href="menuu.html">Chandigarh Resturents <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+
+                <div class="content" id="13">
+                    <a href="menuu.html">Chennai Resturents <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+
+                <div class="content" id="14">
+                    <a href="menuu.html">Coimbatore Resturents <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+
+                <div class="content" id="15">
+                    <a href="menuu.html">Cuttack Resturents <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+
+                <div class="content" id="16">
+                    <a href="menuu.html">Darjeeling Resturents <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+
+                <div class="content" id="17">
+                    <a href="menuu.html">Dehradun Resturents <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+
+                <div class="content" id="18">
+                    <a href="menuu.html">Delhi NCR Resturents <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+
+                <div class="content" id="19">
+                    <a href="menuu.html">Dharmshala Resturents <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+
+                <div class="content" id="20">
+                    <a href="menuu.html">Gangtok Resturents <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+
+                <div class="content" id="21">
+                    <a href="menuu.html">Goa Resturents <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+
+                <div class="content" id="22">
+                    <a href="menuu.html">Gorakhpur Resturents <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+
+                <div class="content" id="23">
+                    <a href="menuu.html">Guntur Resturents <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+
+                <div class="content" id="24">
+                    <a href="menuu.html">Guwahati Resturents <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+
+                <div class="content" id="25">
+                    <a href="menuu.html">Gwalior Resturents <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+
+                <div class="content" id="26">
+                    <a href="menuu.html">Haridwar Resturents <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+
+                <div class="content" id="27">
+                    <a href="menuu.html">Hyderabad Resturents <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+
+                <div class="content" id="28">
+                    <a href="menuu.html">Indore Resturents <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+
+                <div class="content" id="29">
+                    <a href="menuu.html">Jalandhar Resturents <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+
+                <div class="content" id="30">
+                    <a href="menuu.html">Jaipur Resturents <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+
+                <div class="content" id="31">
+                    <a onclick="add()">Add Your Locality <i class="fa-solid fa-plus"></i></a>
+                </div>
+
+
+            </div>
+
+            <!--Footer-->
+
+            <div class="footer">
+                <hr>
+                <p class="copy">© 2023 - All Rights Reserved</p>
+            </div>
+
+
+        </div>
+
+        <!--Right Element-->
+
+        <div class="right">
+            <div class="pr">
+                <img src="bg.jpg">
+            </div>
+
+            <div class="con">
+                <div class="name">Name</div>
+            </div>
+        </div>
+    </div>
+
+    <div id="popup">
+
+        <div class="loginbox">
+
+            <div class="form2">
+
+                <h2>LOCALITY DETAILS</h2>
+                <div class="inputbox">
+                    <span class="icon"><i class="fa-solid fa-location-dot"></i>
+                    </span>
+                    <input type="text" id="pla" required>
+                    <label>Place Name</label>
+                </div>
+                <div class="inputbox">
+                    <span class="icon">
+                        <i class="fa-solid fa-utensils"></i>
+                    </span>
+                    <input type="text" required>
+                    <label>Resturant Name</label>
+                </div>
+                <div class="inputbox">
+                    <span class="icon">
+                        <i class="fa-solid fa-address-book"></i>
+                    </span>
+                    <input type="text" required>
+                    <label>Contact Number</label>
+                </div>
+                <div class="inputbox">
+                    <span class="icon">
+                        <i class="fa-solid fa-eye-slash"></i>
+                    </span>
+                    <input type="email" required>
+                    <label> Email Address</label>
+                </div>
+                <div class="inputbox">
+                    <span class="icon">
+                        <i class="fa-solid fa-camera" id="piic" onclick="pic()"></i>
+                    </span>
+                    <input type="file" id="pic">
+                    <label>Upload Your Resturant Pic</label>
+                </div>
+
+                <div class="bb">
+                    <button type="button" onclick="add()-add1()">Add Details</button>
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script>
+        // Array of strings to search within
+        // const stringArray = ["Agra Resturant", "Ahamedabad Resturant", "Ajmer Resturant", "Alappuzha Resturant", "Allahabad Resturant", "Amrabati Resturant", "Amritsar Resturents", "Aurangabad Resturents", "Bengaluru Resturents", "Bhopal Resturents", "Bhubaneswar Resturents", "Chandigarh Resturents", "Chennai Resturents", "Coimbatore Resturents", "Cuttack Resturents", "Darjeeling Resturents", "Dehradun Resturents", "Delhi NCR Resturents", "Dharmshala Resturents", "Gangtok Resturents", "Goa Resturents", "Gorakhpur Resturents", "Guntur Resturents", "Guwahati Resturents", "Gwalior Resturents", "Haridwar Resturents", "Hyderabad Resturents", "Indore Resturents", "Jalandhar Resturents", "Jaipur Resturents"];
+
+
+
+        const searchString = () => {
+
+            const fillter = document.getElementById('searchInput').value.toUpperCase();
+
+            let a = document.getElementById('searchResults');
+
+            let count = 0;
+
+            for (let i = 0; i < 30; i++) {
+
+                let data = a.getElementsByTagName('a')[i];
+
+                let div = document.getElementsByClassName('content')[i];
+
+                let not = document.getElementsByClassName('not')[0];
+
+
+                if (data) {
+                    let textvalue = data.textContent || data.innerHTML;
+
+                    if (textvalue.toUpperCase().indexOf(fillter) > -1) {
+                        div.style.display = "";
+                    }
+
+                    else {
+                        div.style.display = "none";
+                    }
+                }
+
+            }
+        }
+    </script>
+
+    <script>
+
+        function pic() {
+            var qq = document.getElementById('pic');
+            qq.click();
+        }
+
+        function add() {
+
+            var blur = document.getElementById('blur');
+            blur.classList.toggle('active');
+
+            var popup = document.getElementById('popup');
+            popup.classList.toggle('active');
+
+        }
+    </script>
+
+    <script>
+
+        function add1() {
+
+            var aaa = 0;
+
+            const fillter = document.getElementById('pla').value.toUpperCase();
+
+            let a = document.getElementById('searchResults');
+
+            let count = 0;
+
+            for (let i = 0; i < 30; i++) {
+
+                let data = a.getElementsByTagName('a')[i];
+
+                let div = document.getElementsByClassName('content')[i];
+
+                let not = document.getElementsByClassName('not')[0];
+
+
+                if (data) {
+                    let textvalue = data.textContent.toUpperCase();
+
+                    if (textvalue.indexOf(fillter) !== -1) {
+                        alert("Sorry This Place Is Already exist !!!");
+                        aaa++;
+                        break;
+                    }
+
+                    
+
+                }
+
+            }
+
+            if (aaa==0) {
+                        var originalDiv = document.getElementById("30");
+
+                        var clonedDiv = originalDiv.cloneNode(true);
+
+                        var anchorTag = clonedDiv.querySelector('a');
+                        var italicElement = document.createElement("i");
+
+                        italicElement.className="fa-solid fa-arrow-right";
+
+                        italicElement.style.marginLeft="8px";
+
+                        clonedDiv.appendChild(italicElement);
+
+                        if (anchorTag) {
+                            anchorTag.textContent = fillter.charAt(0).toUpperCase() + fillter.slice(1).toLowerCase()+" Resturants";
+                        }
+
+                        originalDiv.insertAdjacentElement('afterend', clonedDiv);
+                        // break;
+                    }
+
+
+        }
+
+    </script>
+
+</body>
+
+</html>

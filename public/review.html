@@ -1,0 +1,1516 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="review.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+
+    <title>Menuu_2</title>
+
+</head>
+
+<body>
+
+    <!--Menu-->
+
+    <div class="menu" id="blur">
+
+        <!--Navbar-->
+
+        <div class="navbar">
+            <div class="box">
+                <i class='fa-solid fa-apple-whole fa-9x'></i>
+            </div>
+            <div class="items">
+                <a href="index.html"><i class="fa-solid fa-house"></i></a>
+                <a href="resturant.html"><i class="fa-solid fa-bell-concierge"></i></a>
+                <a href="about.html"><i class="fa-solid fa-user"></i></a>
+                <a href="#setting"><i class="fa-solid fa-bars"></i></a>
+            </div>
+
+        </div>
+
+        <!--Main-->
+
+        <div class="main">
+
+            <div class="nav">
+
+                <div class="q">
+                    <div class="name">
+                        <p>Review</p>
+                    </div>
+                    <div class="search">
+                        <div class="xy">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </div>
+                        <select id="select">
+                            <option value="">Catagory</option>
+                            <option value="">Food</option>
+                            <option value="">Website Related</option>
+                            <option value="">Services</option>
+                            <option value="">Delivery</option>
+                            <option value="">Pricing</option>
+                        </select>
+                        <i class="fa-solid fa-grip-lines-vertical"></i>
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <input type="text" id="searchInput" placeholder="Search for reviews"
+                            onkeyup="searchString()-searchString1()-searchString2()-searchString3()-searchString4()-null1()">
+                    </div>
+                </div>
+                <div class="vr">
+                    <img src="scooter.png">
+                    <div class="login">
+                        <button type="button" onclick="toggle()">Login</button>
+                    </div>
+                </div>
+
+            </div>
+
+            <!--Container 1 Head-->
+
+            <div class="container-head">
+                <img src="burger.png">
+                <h4>Food Releted Reviews <i class="fa-solid fa-arrow-right"></i></h4>
+            </div>
+
+            <!--Container 1-->
+
+            <div class="container" id="container">
+
+                <div class="cards">
+                    <div class=card>
+                        <div class=image>
+                            <img src="person1.jpg">
+                            <h3>Michael</h3>
+                        </div>
+                        <div class="content">
+                            <h3>Michael</h3>
+                            <div class="line">
+                                <div class="l">
+                                    Delicious menu, exceptional presentation, recommend!
+                                </div>
+                                <div class="r">
+                                    <div class="v">
+                                        5.0 <i class="fa-solid fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bo">
+                                <button type="button" id="1">Replay <i class="fa-solid fa-paper-plane"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cards">
+                    <div class=card>
+                        <div class=image>
+                            <img src="person2.jpg">
+                            <h3>Daniel</h3>
+                        </div>
+                        <div class="content">
+                            <h3>Daniel</h3>
+                            <div class="line">
+                                <div class="l">
+                                    Impeccable taste, courteous staff, delightful.
+                                </div>
+                                <div class="r">
+                                    <div class="v">
+                                        4.5 <i class="fa-solid fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="bon">
+                                <button type="button" id="2">Replay <i class="fa-solid fa-paper-plane"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cards">
+                    <div class=card>
+                        <div class=image>
+                            <img src="person3.jpg">
+                            <h3>Alexander</h3>
+                        </div>
+                        <div class="content">
+                            <h3>Alexander</h3>
+                            <div class="lines">
+                                <div class="l">
+                                    Lacked seasoning, slow service. Disappointing.
+                                </div>
+                                <div class="r">
+                                    <div class="v">
+                                        4.1 <i class="fa-solid fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bo">
+                                <button type="button" id="3">Replay <i class="fa-solid fa-paper-plane"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cards">
+                    <div class=card>
+                        <div class=image>
+                            <img src="person4.avif">
+                            <h3>William</h3>
+                        </div>
+                        <div class="content">
+                            <h3>William</h3>
+                            <div class="line">
+                                <div class="l">
+                                    Generous portions, flavorsome dishes, attentive.
+                                </div>
+                                <div class="r">
+                                    <div class="v">
+                                        4.0 <i class="fa-solid fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bo">
+                                <button type="button" id="4">Replay <i class="fa-solid fa-paper-plane"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cards">
+                    <div class=card>
+                        <div class=image>
+                            <img src="person5.avif">
+                            <h3>James</h3>
+                        </div>
+                        <div class="content">
+                            <h3>James</h3>
+                            <div class="line">
+                                <div class="l">
+                                    Limited options, surprising flavorful dishes.
+                                </div>
+                                <div class="r">
+                                    <div class="v">
+                                        3.8 <i class="fa-solid fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bo">
+                                <button type="button" id="5">Replay <i class="fa-solid fa-paper-plane"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cards" id="cards">
+                    <div class=card>
+                        <div class=image>
+                            <img src="person6.avif">
+                            <h3>Benjamin</h3>
+                        </div>
+                        <div class="content">
+                            <h3>Benjamin</h3>
+                            <div class="line">
+                                <div class="l">
+                                    Friendly, great value, scrumptious meals.
+                                </div>
+                                <div class="r">
+                                    <div class="v">
+                                        3.5 <i class="fa-solid fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bo">
+                                <button type="button" id="6">Replay <i class="fa-solid fa-paper-plane"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="add" onclick="toggle()">
+                    <i class="fa-solid fa-plus"></i>
+                </div>
+
+            </div>
+
+            <!--Container 2 Head-->
+
+            <div class="container-head">
+                <img src="web-link_3308395.png">
+                <h4>Website Related Reviews <i class="fa-solid fa-arrow-right"></i></h4>
+            </div>
+
+            <!--Container 2-->
+
+            <div class="container" id="container1">
+
+                <div class="cards">
+                    <div class=card>
+                        <div class=image>
+                            <img src="person7.jpg">
+                            <h3>Matthew</h3>
+                        </div>
+                        <div class=content>
+                            <h3>Matthew</h3>
+                            <div class="line">
+                                <div class="l">
+                                    Exquisite, slightly pricey, but worthwhile.
+                                </div>
+                                <div class="r">
+                                    <div class="v">
+                                        4.9 <i class="fa-solid fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bo">
+                                <button type="button" id="7">Replay <i class="fa-solid fa-paper-plane"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cards">
+                    <div class=card>
+                        <div class=image>
+                            <img src="person8.avif">
+                            <h3>Joseph</h3>
+                        </div>
+                        <div class=content>
+                            <h3>Joseph</h3>
+                            <div class="line">
+                                <div class="l">
+                                    Overpriced for average quality. Improvements?
+                                </div>
+                                <div class="r">
+                                    <div class="v">
+                                        4.7 <i class="fa-solid fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="bon">
+                                <button type="button" id="8">Replay <i class="fa-solid fa-paper-plane"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cards">
+                    <div class=card>
+                        <div class=image>
+                            <img src="person9.avif">
+                            <h3>Ethan</h3>
+                        </div>
+                        <div class=content>
+                            <h3>Ethan</h3>
+                            <div class="lines">
+                                <div class="l">
+                                    Diverse menu, exceptional service. Recommended!
+                                </div>
+                                <div class="r">
+                                    <div class="v">
+                                        4.2 <i class="fa-solid fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bo">
+                                <button type="button" id="9">Replay <i class="fa-solid fa-paper-plane"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cards">
+                    <div class=card>
+                        <div class=image>
+                            <img src="person10.avif">
+                            <h3>Samuel</h3>
+                        </div>
+                        <div class=content>
+                            <h3>Samuel</h3>
+                            <div class="line">
+                                <div class="l">
+                                    Flawless service, impressive flavors, perfect!
+                                </div>
+                                <div class="r">
+                                    <div class="v">
+                                        4.0 <i class="fa-solid fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bo">
+                                <button type="button" id="10">Replay <i class="fa-solid fa-paper-plane"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cards">
+                    <div class=card>
+                        <div class=image>
+                            <img src="person11.avif">
+                            <h3>Christopher</h3>
+                        </div>
+                        <div class=content>
+                            <h3>Christopher</h3>
+                            <div class="line">
+                                <div class="l">
+                                    Incredible food, fast service, exceptional.
+                                </div>
+                                <div class="r">
+                                    <div class="v">
+                                        3.9 <i class="fa-solid fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bo">
+                                <button type="button" id="11">Replay <i class="fa-solid fa-paper-plane"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cards">
+                    <div class=card>
+                        <div class=image>
+                            <img src="person12.jpg">
+                            <h3>David</h3>
+                        </div>
+                        <div class=content>
+                            <h3>David</h3>
+                            <div class="line">
+                                <div class="l">
+                                    Unique, slow service, price mismatch.
+                                </div>
+                                <div class="r">
+                                    <div class="v">
+                                        4.1 <i class="fa-solid fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bo">
+                                <button type="button" id="12">Replay <i class="fa-solid fa-paper-plane"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="add" onclick="toggle()">
+                    <i class="fa-solid fa-plus"></i>
+                </div>
+
+            </div>
+
+            <!--Container 3 Head-->
+
+            <div class="container-head">
+                <img src="customer-service_870175.png">
+                <h4> Services Related Reviews <i class="fa-solid fa-arrow-right"></i></h4>
+            </div>
+
+            <!--Container 3-->
+
+            <div class="container" id="container2">
+
+                <div class="cards">
+                    <div class=card>
+                        <div class=image>
+                            <img src="person13.jpg">
+                            <h3>Andrew</h3>
+                        </div>
+                        <div class=content>
+                            <h3>Andrew</h3>
+                            <div class="line">
+                                <div class="l">
+                                    Top-notch service, gourmet dishes.
+                                </div>
+                                <div class="r">
+                                    <div class="v">
+                                        4.1 <i class="fa-solid fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bou">
+                                <button type="button" id="13">Replay <i class="fa-solid fa-paper-plane"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cards">
+                    <div class=card>
+                        <div class=image>
+                            <img src="person14.jpg">
+                            <h3>Ryan</h3>
+                        </div>
+                        <div class=content>
+                            <h3>Ryan</h3>
+                            <div class="line">
+                                <div class="l">
+                                    Decent food, slow service—improvement needed.
+                                </div>
+                                <div class="r">
+                                    <div class="v">
+                                        3.6 <i class="fa-solid fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="bon">
+                                <button type="button" id="14">Replay <i class="fa-solid fa-paper-plane"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cards">
+                    <div class=card>
+                        <div class=image>
+                            <img src="person15.avif">
+                            <h3>John</h3>
+                        </div>
+                        <div class=content>
+                            <h3>John</h3>
+                            <div class="lines">
+                                <div class="l">
+                                    Attentive staff, mediocre food quality.
+                                </div>
+                                <div class="r">
+                                    <div class="v">
+                                        4.6 <i class="fa-solid fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bo">
+                                <button type="button" id="15">Replay <i class="fa-solid fa-paper-plane"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cards">
+                    <div class=card>
+                        <div class=image>
+                            <img src="person16.avif">
+                            <h3>Nathan</h3>
+                        </div>
+                        <div class=content>
+                            <h3>Nathan</h3>
+                            <div class="line">
+                                <div class="l">
+                                    Flavorful cuisine, attentive servers, great!
+                                </div>
+                                <div class="r">
+                                    <div class="v">
+                                        3.8 <i class="fa-solid fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bo">
+                                <button type="button" id="16">Replay <i class="fa-solid fa-paper-plane"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cards">
+                    <div class=card>
+                        <div class=image>
+                            <img src="person17.jpg">
+                            <h3>Jonathan</h3>
+                        </div>
+                        <div class=content>
+                            <h3>Jonathan</h3>
+                            <div class="line">
+                                <div class="l">
+                                    Unparalleled taste, attentive service—exceeded!
+                                </div>
+                                <div class="r">
+                                    <div class="v">
+                                        3.9 <i class="fa-solid fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bo">
+                                <button type="button" id="17">Replay <i class="fa-solid fa-paper-plane"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cards">
+                    <div class=card>
+                        <div class=image>
+                            <img src="person18.avif">
+                            <h3>Anthony</h3>
+                        </div>
+                        <div class=content>
+                            <h3>Anthony</h3>
+                            <div class="line">
+                                <div class="l">
+                                    Disappointing taste, slow service. Improve?
+                                </div>
+                                <div class="r">
+                                    <div class="v">
+                                        4.1 <i class="fa-solid fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bo">
+                                <button type="button" id="18">Replay <i class="fa-solid fa-paper-plane"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="add" onclick="toggle()">
+                    <i class="fa-solid fa-plus"></i>
+                </div>
+
+            </div>
+
+            <!--Container 4 Head-->
+
+            <div class="container-head">
+                <img src="delivery_3063822.png">
+                <h4>Delivery Releted Reviews <i class="fa-solid fa-arrow-right"></i></h4>
+            </div>
+
+            <!--Container 4-->
+
+            <div class="container" id="container3">
+
+                <div class="cards">
+                    <div class=card>
+                        <div class=image>
+                            <img src="person19.avif">
+                            <h3>Brandon</h3>
+                        </div>
+                        <div class=content>
+                            <h3>Brandon</h3>
+                            <div class="line">
+                                <div class="l">
+                                    Fresh ingredients, exceptional service. Must-visit!
+                                </div>
+                                <div class="r">
+                                    <div class="v">
+                                        4.5 <i class="fa-solid fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bou">
+                                <button type="button" id="19">Replay <i class="fa-solid fa-paper-plane"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cards">
+                    <div class=card>
+                        <div class=image>
+                            <img src="person20.avif">
+                            <h3>Tyler</h3>
+                        </div>
+                        <div class=content>
+                            <h3>Tyler</h3>
+                            <div class="line">
+                                <div class="l">
+                                    Flavors lacked depth, exceptional service.
+                                </div>
+                                <div class="r">
+                                    <div class="v">
+                                        4.5 <i class="fa-solid fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="bon">
+                                <button type="button" id="20">Replay <i class="fa-solid fa-paper-plane"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cards">
+                    <div class=card>
+                        <div class=image>
+                            <img src="person21.jpg">
+                            <h3>Kevin</h3>
+                        </div>
+                        <div class=content>
+                            <h3>Kevin</h3>
+                            <div class="lines">
+                                <div class="l">
+                                    Exceptional flavors, attentive service—standard raised!
+                                </div>
+                                <div class="r">
+                                    <div class="v">
+                                        4.6 <i class="fa-solid fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bo">
+                                <button type="button" id="21">Replay <i class="fa-solid fa-paper-plane"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cards">
+                    <div class=card>
+                        <div class=image>
+                            <img src="person22.avif">
+                            <h3>Nicholas</h3>
+                        </div>
+                        <div class=content>
+                            <h3>Nicholas</h3>
+                            <div class="line">
+                                <div class="l">
+                                    Tasteless dishes, slow service. Avoid.
+                                </div>
+                                <div class="r">
+                                    <div class="v">
+                                        4.1 <i class="fa-solid fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bo">
+                                <button type="button" id="22">Replay <i class="fa-solid fa-paper-plane"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cards">
+                    <div class=card>
+                        <div class=image>
+                            <img src="person23.jpeg">
+                            <h3>Jacob</h3>
+                        </div>
+                        <div class=content>
+                            <h3>Jacob</h3>
+                            <div class="line2">
+                                <div class="l">
+                                    Impressive presentation, tasty dishes, attentive.
+                                </div>
+                                <div class="r">
+                                    <div class="v">
+                                        4.2 <i class="fa-solid fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bo">
+                                <button type="button" id="23">Replay <i class="fa-solid fa-paper-plane"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cards">
+                    <div class=card>
+                        <div class=image>
+                            <img src="person24.avif">
+                            <h3>Justin</h3>
+                        </div>
+                        <div class=content>
+                            <h3>Justin</h3>
+                            <div class="line">
+                                <div class="l">
+                                    Bland flavors, quick service. Mediocre.
+                                </div>
+                                <div class="r">
+                                    <div class="v">
+                                        4.1 <i class="fa-solid fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bo">
+                                <button type="button" id="24">Replay <i class="fa-solid fa-paper-plane"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="add" onclick="toggle()">
+                    <i class="fa-solid fa-plus"></i>
+                </div>
+
+            </div>
+
+            <section class="adds" id="add0">
+                <div class="slider-wrapper">
+                    <div class="slider">
+                        <img id="slide-1" src="ads1.jpg">
+                        <img id="slide-2" src="ads2.jpg">
+                        <img id="slide-3" src="ads3.jpg">
+                        <div class="slider-nav">
+                            <a href="#slide-1"></a>
+                            <a href="#slide-2"></a>
+                            <a href="#slide-3"></a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--Container 5 Head-->
+
+            <div class="container-head">
+                <img src="price-tag_567702.png">
+                <h4>Pricing Releted Reviews <i class="fa-solid fa-arrow-right"></i></h4>
+            </div>
+
+            <!--Container 5-->
+
+            <div class="container" id="container4">
+
+                <div class="cards">
+                    <div class=card>
+                        <div class=image>
+                            <img src="person25.avif">
+                            <h3>Lucas</h3>
+                        </div>
+                        <div class=content>
+                            <h3>Lucas</h3>
+                            <div class="line">
+                                <div class="l">
+                                    Exquisite flavors, attentive staff—favorite spot!
+                                </div>
+                                <div class="r">
+                                    <div class="v">
+                                        3.9 <i class="fa-solid fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bou">
+                                <button type="button" id="25">Replay <i class="fa-solid fa-paper-plane"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cards">
+                    <div class=card>
+                        <div class=image>
+                            <img src="person26.avif">
+                            <h3>Caleb</h3>
+                        </div>
+                        <div class=content>
+                            <h3>Caleb</h3>
+                            <div class="line">
+                                <div class="l">
+                                    Innovative menu, exceptional service. Gastronomic adventure!
+                                </div>
+                                <div class="r">
+                                    <div class="v">
+                                        4.2 <i class="fa-solid fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="bon">
+                                <button type="button" id="26">Replay <i class="fa-solid fa-paper-plane"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cards">
+                    <div class=card>
+                        <div class=image>
+                            <img src="person27.avif">
+                            <h3>Dylan</h3>
+                        </div>
+                        <div class=content>
+                            <h3>Dylan</h3>
+                            <div class="lines">
+                                <div class="l">
+                                    Underwhelming taste, slow service. Disappointing.
+                                </div>
+                                <div class="r">
+                                    <div class="v">
+                                        4.5 <i class="fa-solid fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bo">
+                                <button type="button" id="27">Replay <i class="fa-solid fa-paper-plane"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cards">
+                    <div class=card>
+                        <div class=image>
+                            <img src="person28.avif">
+                            <h3>Adam</h3>
+                        </div>
+                        <div class=content>
+                            <h3>Adam</h3>
+                            <div class="line">
+                                <div class="l">
+                                    Delicious meals, friendly service, reasonable.
+                                </div>
+                                <div class="r">
+                                    <div class="v">
+                                        4.2 <i class="fa-solid fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bo">
+                                <button type="button" id="28">Replay <i class="fa-solid fa-paper-plane"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cards">
+                    <div class=card>
+                        <div class=image>
+                            <img src="person29.jpeg">
+                            <h3>Logan</h3>
+                        </div>
+                        <div class=content>
+                            <h3>Logan</h3>
+                            <div class="line">
+                                <div class="l">
+                                    Sublime flavors, attentive service. Worth!
+                                </div>
+                                <div class="r">
+                                    <div class="v">
+                                        3.0 <i class="fa-solid fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bo">
+                                <button type="button" id="29">Replay <i class="fa-solid fa-paper-plane"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cards">
+                    <div class=card>
+                        <div class=image>
+                            <img src="person30.avif">
+                            <h3>Gabriel</h3>
+                        </div>
+                        <div class=content>
+                            <h3>Gabriel</h3>
+                            <div class="line">
+                                <div class="l">
+                                    Good food, fast service, lacking.
+                                </div>
+                                <div class="r">
+                                    <div class="v">
+                                        4.6 <i class="fa-solid fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bo">
+                                <button type="button" id="30">Replay <i class="fa-solid fa-paper-plane"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="add" onclick="toggle()">
+                    <i class="fa-solid fa-plus"></i>
+                </div>
+
+            </div>
+
+            <!--Footer-->
+
+            <div class="footer">
+                <hr>
+                <p class="copy">© 2023 - All Rights Reserved</p>
+            </div>
+        </div>
+
+        <!--Right-->
+
+        <div class="right">
+
+            <div class="upper">
+                <h3><i class="fa-solid fa-filter"></i><span>F</span>iltter</h3>
+            </div>
+
+            <div class="middle" id="rate">
+
+                <div class="filter">
+                    <h2>Select The Catagory You Want :</h2>
+                    <select id="sele">
+                        <option class="m">All</option>
+                        <option class="m">Food</option>
+                        <option class="m">Website Related</option>
+                        <option class="m">Services</option>
+                        <option class="m">Delivery</option>
+                        <option class="m">Pricing</option>
+                    </select>
+                </div>
+
+            </div>
+
+            <div class="lower">
+                <button type="button" onclick="c()"><i class="fa-solid fa-bolt"></i> Apply Now</button>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div id="popup">
+
+        <div class="loginbox">
+
+            <div class="form2">
+
+                <h2>ITEMS DETAILS</h2>
+                <div class="inputbox">
+                    <span class="icon"><i class="fa-solid fa-signature"></i>
+                    </span>
+                    <input type="text" id="ite" required>
+                    <label>Your Name</label>
+                </div>
+
+                <div class="inputbox">
+                    <span class="icon"><i class="fa-solid fa-check"></i>
+                    </span>
+                    <select id="sel">
+                        <option value=""></option>
+                        <option value="">Food</option>
+                        <option value="">Website Related</option>
+                        <option value="">Services</option>
+                        <option value="">Delivery</option>
+                        <option value="">Pricing</option>
+                    </select>
+                    <label>Catagory</label>
+                </div>
+
+                <div class="inputbox">
+                    <span class="icon">
+                        <i class="fa-solid fa-star"></i>
+                    </span>
+                    <input type="number" id="det" required>
+                    <label>Remark</label>
+                </div>
+
+                <div class="inputbox">
+                    <span class="icon">
+                        <i class="fa-solid fa-camera" id="piic" onclick="pic()"></i>
+                    </span>
+                    <input type="file" id="pic">
+                    <label>Your Pic</label>
+                </div>
+
+                <div class="bb">
+                    <button type="button" onclick="toggle()-add1()">Add Details</button>
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </div>
+    </div>
+
+    <!-- js for search foodd items -->
+
+    <script>
+        const searchString = () => {
+
+            let head = document.getElementsByClassName('container-head')[0];
+            head.style.display = "none";
+
+            let ad = document.getElementsByClassName('add')[0];
+            ad.style.display = "none";
+
+            var aaaa = document.getElementById('add0');
+            aaaa.style.display = "none";
+
+            const fillter = document.getElementById('searchInput').value.toUpperCase();
+
+            let a = document.getElementById('container');
+
+            for (let i = 0; i < 6; i++) {
+
+                let d = a.getElementsByClassName('image')[i];
+
+                let data = d.getElementsByTagName('h3')[0];
+
+                let h = a.getElementsByClassName('cards')[i];
+
+                if (data) {
+
+                    let textvalue = data.textContent.toUpperCase();
+
+
+                    if (textvalue.indexOf(fillter) !== -1) {
+                        h.style.display = "";
+                    }
+
+                    else {
+                        h.style.display = "none";
+                    }
+
+                }
+
+            }
+
+        }
+
+        const searchString1 = () => {
+
+            let head = document.getElementsByClassName('container-head')[1];
+            head.style.display = "none";
+
+            let ad = document.getElementsByClassName('add')[1];
+            ad.style.display = "none";
+
+            const fillter = document.getElementById('searchInput').value.toUpperCase();
+
+            let bbb = document.getElementById('container1');
+
+
+            for (let i = 0; i < 6; i++) {
+
+                let dd = bbb.getElementsByClassName('image')[i];
+
+                let data = dd.getElementsByTagName('h3')[0];
+
+                let hh = bbb.getElementsByClassName('cards')[i];
+
+                if (data) {
+
+                    let textvalue = data.textContent.toUpperCase();
+
+                    console.log(textvalue)
+
+
+                    if (textvalue.indexOf(fillter) !== -1) {
+                        hh.style.display = "";
+                    }
+
+                    else {
+                        hh.style.display = "none";
+                    }
+
+                }
+
+            }
+
+        }
+
+        const searchString2 = () => {
+
+            let head = document.getElementsByClassName('container-head')[2];
+            head.style.display = "none";
+
+            let ad = document.getElementsByClassName('add')[2];
+            ad.style.display = "none";
+
+            const fillter = document.getElementById('searchInput').value.toUpperCase();
+
+            let ccc = document.getElementById('container2');
+
+
+            for (let i = 0; i < 6; i++) {
+
+                let dd = ccc.getElementsByClassName('image')[i];
+
+                let data = dd.getElementsByTagName('h3')[0];
+
+                let hh = ccc.getElementsByClassName('cards')[i];
+
+                if (data) {
+
+                    let textvalue = data.textContent.toUpperCase();
+
+                    console.log(textvalue)
+
+
+                    if (textvalue.indexOf(fillter) !== -1) {
+                        hh.style.display = "";
+                    }
+
+                    else {
+                        hh.style.display = "none";
+                    }
+
+                }
+
+            }
+
+        }
+
+        const searchString3 = () => {
+
+            let head = document.getElementsByClassName('container-head')[3];
+            head.style.display = "none";
+
+            let ad = document.getElementsByClassName('add')[3];
+            ad.style.display = "none";
+
+            const fillter = document.getElementById('searchInput').value.toUpperCase();
+
+            let ddd = document.getElementById('container3');
+
+
+            for (let i = 0; i < 6; i++) {
+
+                let dd = ddd.getElementsByClassName('image')[i];
+
+                let data = dd.getElementsByTagName('h3')[0];
+
+                let hh = ddd.getElementsByClassName('cards')[i];
+
+                if (data) {
+
+                    let textvalue = data.textContent.toUpperCase();
+
+                    console.log(textvalue)
+
+
+                    if (textvalue.indexOf(fillter) !== -1) {
+                        hh.style.display = "";
+                    }
+
+                    else {
+                        hh.style.display = "none";
+                    }
+
+                }
+
+            }
+
+        }
+
+        const searchString4 = () => {
+
+            let head = document.getElementsByClassName('container-head')[4];
+            head.style.display = "none";
+
+            let ad = document.getElementsByClassName('add')[4];
+            ad.style.display = "none";
+
+            const fillter = document.getElementById('searchInput').value.toUpperCase();
+
+            let eee = document.getElementById('container4');
+
+
+            for (let i = 0; i < 6; i++) {
+
+                let dd = eee.getElementsByClassName('image')[i];
+
+                let data = dd.getElementsByTagName('h3')[0];
+
+                let hh = eee.getElementsByClassName('cards')[i];
+
+                if (data) {
+
+                    let textvalue = data.textContent.toUpperCase();
+
+                    console.log(textvalue)
+
+
+                    if (textvalue.indexOf(fillter) !== -1) {
+                        hh.style.display = "";
+                    }
+
+                    else {
+                        hh.style.display = "none";
+                    }
+
+                }
+
+            }
+
+        }
+
+        function null1() {
+            const fillter = document.getElementById('searchInput').value.toUpperCase();
+
+            if (fillter === "") {
+                for (let i = 0; i < 5; i++) {
+                    let head = document.getElementsByClassName('container-head')[i];
+                    head.style.display = "flex";
+
+                    let ad = document.getElementsByClassName('add')[i];
+                    ad.style.display = "flex";
+                }
+
+                var aaaa = document.getElementById('add0');
+                aaaa.style.display = "flex";
+
+            }
+        }
+
+    </script>
+
+    <!-- <script>
+
+        function toggle() {
+
+            var blur = document.getElementById('blur');
+            blur.classList.toggle('active');
+
+            var popup = document.getElementById('popup');
+            popup.classList.toggle('active');
+        }
+
+        var a;
+
+        function eye() {
+            if (a == 1) {
+                document.getElementById('eye').type = 'password';
+                a = 0;
+            }
+            else {
+                document.getElementById('eye').type = 'text';
+                a = 1;
+            }
+        }
+
+        function eye1() {
+            if (a == 1) {
+                document.getElementById('eye1').type = 'password';
+                a = 0;
+            }
+            else {
+                document.getElementById('eye1').type = 'text';
+                a = 1;
+            }
+        }
+
+        function eye2() {
+            if (a == 1) {
+                document.getElementById('eye2').type = 'password';
+                a = 0;
+            }
+            else {
+                document.getElementById('eye2').type = 'text';
+                a = 1;
+            }
+        }
+
+        function eye3() {
+            if (a == 1) {
+                document.getElementById('eye3').type = 'password';
+                a = 0;
+            }
+            else {
+                document.getElementById('eye3').type = 'text';
+                a = 1;
+            }
+        }
+
+        function eye4() {
+            if (a == 1) {
+                document.getElementById('eye4').type = 'password';
+                a = 0;
+            }
+            else {
+                document.getElementById('eye4').type = 'text';
+                a = 1;
+            }
+        }
+
+        function eye5() {
+            if (a == 1) {
+                document.getElementById('eye5').type = 'password';
+                a = 0;
+            }
+            else {
+                document.getElementById('eye5').type = 'text';
+                a = 1;
+            }
+        }
+
+        function register() {
+            var on = document.getElementsByClassName('form2')[0];
+            on.style.display = "block";
+            var off = document.getElementById('form1');
+            off.style.display = "none";
+            var form = document.getElementById('form3');
+            form.style.display = "none";
+            var up = document.getElementById('popup');
+            up.style.width = "400px";
+        }
+
+        function login() {
+            var on = document.getElementsByClassName('form2')[0];
+            on.style.display = "none";
+            var off = document.getElementById('form1');
+            off.style.display = "block";
+            var form = document.getElementById('form3');
+            form.style.display = "none";
+            var up = document.getElementById('popup');
+            up.style.width = "370px";
+        }
+
+        function forget() {
+            var on = document.getElementsByClassName('form2')[0];
+            on.style.display = "none";
+            var off = document.getElementById('form1');
+            off.style.display = "none";
+            var form = document.getElementById('form3');
+            form.style.display = "block";
+            var up = document.getElementById('popup');
+            up.style.width = "400px";
+        }
+
+    </script> -->
+
+    <script>
+        function pic() {
+            var qq = document.getElementById('pic');
+            qq.click();
+        }
+    </script>
+
+    <script>
+
+        function toggle() {
+
+            var blur = document.getElementById('blur');
+            blur.classList.toggle('active');
+
+            var popup = document.getElementById('popup');
+            popup.classList.toggle('active');
+        }
+
+        var a;
+
+        function add1() {
+
+            var aaa = 0;
+
+            const fillter = document.getElementById('ite').value.toUpperCase();
+            const fill = document.getElementById('det').value.toUpperCase();
+            const fil = document.getElementById('pri').value;
+
+            let a = document.getElementById('container');
+
+
+            for (let i = 0; i < 30; i++) {
+
+                let data = a.getElementsByTagName('h3')[i];
+
+                let div = document.getElementsByClassName('content')[i];
+
+                let not = document.getElementsByClassName('not')[0];
+
+
+                if (data) {
+                    let textvalue = data.textContent.toUpperCase();
+
+                    if (textvalue.indexOf(fillter) !== -1) {
+                        alert("Sorry This Place Is Already exist !!!");
+                        aaa++;
+                        break;
+                    }
+
+                }
+
+            }
+
+            if (aaa == 0) {
+                var originalDiv = document.getElementById('cards');
+
+                var clonedDiv = originalDiv.cloneNode(true);
+                clonedDiv.className = "cards";
+
+                var img = clonedDiv.querySelector('img');
+
+                var anchorTag = clonedDiv.querySelector('h3');
+
+                var co = clonedDiv.querySelector('.content');
+
+                var con2 = co.querySelector('h3');
+
+                var anchorTag1 = clonedDiv.querySelector('h3');
+
+                var cls = clonedDiv.querySelector('.l');
+
+                var rateing = clonedDiv.querySelector('.v');
+
+                var pri = clonedDiv.querySelector('p');
+
+                if (img) {
+                    anchorTag.textContent = fillter.charAt(0).toUpperCase() + fillter.slice(1).toLowerCase();
+                    con2.textContent = fillter.charAt(0).toUpperCase() + fillter.slice(1).toLowerCase();
+                    img.src = "pic1.jpg";
+                    cls.textContent = fill.charAt(0).toUpperCase() + fill.slice(1).toLowerCase();
+                    pri.textContent = "INR :" + fil + "/-";
+                    rateing.textContent = "0";
+                }
+
+                originalDiv.insertAdjacentElement('afterend', clonedDiv);
+                // break;
+            }
+
+
+        }
+
+
+    </script>
+
+    <script>
+        function c() {
+            var f = document.getElementById('sele').selectedIndex;
+
+            var fa = document.getElementsByClassName('m')[f].textContent.toUpperCase();
+
+            for (let i = 0; i < 5; i++) {
+                var g = document.getElementsByClassName('container-head')[i];
+                var textv = g.getElementsByTagName('h4')[0].textContent.toUpperCase();
+
+                if (fa==='ALL') {
+                    document.getElementsByClassName('container-head')[0].style.display="flex";
+                    document.getElementsByClassName('container-head')[1].style.display="flex";
+                    document.getElementsByClassName('container-head')[2].style.display="flex";
+                    document.getElementsByClassName('container-head')[3].style.display="flex";
+                    document.getElementsByClassName('container-head')[4].style.display="flex";
+
+
+                    document.getElementsByClassName('container')[0].style.display="flex";
+                    document.getElementsByClassName('container')[1].style.display="flex";
+                    document.getElementsByClassName('container')[2].style.display="flex";
+                    document.getElementsByClassName('container')[3].style.display="flex";
+                    document.getElementsByClassName('container')[4].style.display="flex";
+
+                    document.getElementById('add0').style.display="flex";
+                    break;
+                }
+
+                if (textv.indexOf(fa)!==-1) {
+                    document.getElementsByClassName('container-head')[i].style.display="flex";
+                    document.getElementsByClassName('container')[i].style.display="flex";
+                    document.getElementById('add0').style.display="none";
+                }
+                
+                else {
+                    document.getElementsByClassName('container-head')[i].style.display="none";
+                    document.getElementsByClassName('container')[i].style.display="none";
+                    document.getElementById('add0').style.display="none";
+                }
+
+            }
+        }
+    </script>
+
+</body>
+
+</html>

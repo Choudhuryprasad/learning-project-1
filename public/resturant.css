@@ -1,0 +1,352 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu Mono', monospace;
+    text-decoration: none;
+    border: none;
+    scroll-behavior: smooth;
+}
+
+body{
+    background: linear-gradient(155deg , #333232, #282727, #000000 , #000000 , #e2293f);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+}
+
+.menu{
+    position: relative;
+    display: flex;
+    margin: 50px 80px 50px 80px;
+    height: 85.5vh;
+    width: 89.5%;
+    overflow: hidden;
+    border-radius: 30px;
+    border: 1px solid #fff;
+    background: linear-gradient(155deg,#696666,#000000,#280101);
+    backdrop-filter: blur(20px);
+    color: #fff;
+    /* background-size: cover; */
+}
+
+.box{
+    margin: -30px 0 0 0;
+    position: relative;
+    font-size: .3rem;
+    color: #fff;
+    text-shadow: 0 0 0.5px #0f0,
+                 0 0 30px #0f0,
+                 0 0 55px #0f0,
+                 0 0 75px #0f0,
+                 0 0 80px #0f0;
+    animation: animate 5s linear infinite;
+}
+
+@keyframes animate{
+    0%{
+        filter: hue-rotate(0deg);
+    }
+
+    100%{
+        filter: hue-rotate(360deg);
+    }
+}
+
+.navbar{
+    margin: 20px 0 20px 20px;
+    height: 93%;
+    width: 5%;
+    display: grid;
+    background: transparent;
+    border: 1px solid #fff;
+    border-radius: 30px;
+    align-items: center;
+    justify-content: center;
+    grid-gap: 20px;
+}
+
+.items a{
+    position: relative;
+    margin: 70px 0 0 0;
+    font-size: 1rem;
+    color: #fff;
+}
+
+.items a i{
+    transition: .2s;
+}
+
+.items a i:hover{
+    transform: scale(1.2);
+}
+
+.items{
+    justify-content: center;
+    align-items: center;
+    display: grid;
+}
+
+.search{
+    margin: 0 0 0 30px;
+    background: rgba(255,255,255,0.1);
+    height: 40px;
+    border-radius: 30px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    transition: .2s;
+}
+
+.search:hover{
+    transform: scale(1.05);
+}
+
+::-webkit-input-placeholder{
+    color: #fff;
+}
+
+.search input{
+    background: transparent;
+    color: #fff;
+    border: none;
+    margin: 0 0 0 10px;
+    outline: none;
+}
+
+.search i{
+    margin: 0 10px 0 30px;
+}
+
+.main{
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+    overflow-y: scroll;
+    height: auto;
+    width: 75%;
+    margin: 30px 0 0 0;
+}
+
+.main::-webkit-scrollbar{
+    display: none;
+}
+
+.head{
+    /* margin: 60px 0 0 20px; */
+    height: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0 0 0;
+}
+
+.head h3 i{
+    font-size: 20px;
+}
+
+.head h3{
+    font-size: 25px;
+}
+
+.p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 10px;
+    margin: 50px 0 0 0;
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 65px 0 0 0;
+}
+
+.container .content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 50px 50px 0 50px;
+    width: 240px;
+    background: transparent;
+    border: 2px solid #fff;
+    border-radius: 20px;
+    height: 50px;
+    transition: .3s;
+}
+
+.container .content:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgb(91, 92, 91),
+    0 0 25px rgb(15, 15, 15);
+    text-shadow:  0 0 10px rgb(91, 92, 91),
+    0 0 25px rgb(214, 213, 213);
+}
+
+.container a{
+    background: transparent;
+    color: #fff;
+}
+
+.footer{
+    position: relative;
+    color: #fff;
+    font-size: 12px;
+    line-height: 20px;
+    background: transparent;
+    width: 100%;
+    padding: 100px 0 30px ;
+    bottom: 0;
+    height: auto;
+}
+
+.footer hr{
+    width: 80%;
+    border: 0;
+    border-bottom: 1px solid #fff;
+    margin: 20px auto;
+}
+
+.copy{
+    text-align: center;
+}
+
+.right{
+    height: 100%;
+    width: 18%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.pr{
+    height: 70%;
+    width: 100%;
+    margin: 60px 80px 0px 20px;
+    overflow: hidden;
+    transition: .3s;
+    border: 1px solid #fff;
+    border-radius: 20px;
+    box-shadow: 0 0 5px rgba(255,255,255,0.1),
+    0 0 25px rgba(255,255,255,0.1),
+    0 0 80px rgba(255,255,255,0.1);
+}
+
+.pr:hover{
+    box-shadow: 0 0 10px rgb(91, 92, 91),
+    0 0 25px rgb(214, 213, 213);
+}
+
+.pr img{
+    height: 100%;
+    width: 100%;
+}
+
+.pr img:hover{
+    transform: scale(1.05);
+}
+
+.con{
+    height: 30%;
+    width: 240px;
+    margin: 50px 80px 50px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.con .name{
+    position: relative;
+    font-size: 3.5em;
+    letter-spacing: 8px;
+    font-weight: bold;
+    color: #fff;
+    text-transform: uppercase;
+    width: 100%;
+    text-align: center;
+    line-height: 0.70em;
+    outline: none;
+    animation: anime 5s linear infinite;
+}
+
+.not {
+    position: absolute;
+    height: 20px;
+    width: 300px;
+    margin: 24rem 0 0 22rem;
+    color: #fff;
+    display: none;
+}
+
+
+
+@keyframes anime {
+    
+    0%,18%,20%,50.1%,60%,65.1%,80%,90.1%,92%{
+        color: rgba(255,255,255,0.1);
+        text-shadow: none;
+    }
+
+    18.1%,20.1%,30%,50%,60.1%,65%,80.1%,90%,92.1%,100%{
+        color: #fff;
+        text-shadow: 0 0 10px #03bcf4,
+        0 0 20px #03bcf4,
+        0 0 40px #03bcf4,
+        0 0 80px #03bcf4,
+        0 0 160px #03bcf4;
+    }
+}
+
+@media  (max-width:950px) {
+    .menu{
+        margin: 20px 0 20px 0;
+        height: 95.5vh;
+    }
+
+    .navbar{
+        width: 17%;
+    }
+
+    .right{
+        display: none;
+    }
+
+    .head{
+        margin: 40px 8px 20px 20px;
+    }
+
+    .head h3{
+        font-size: 20px;
+    }
+
+    .p{
+        margin: 40px 8px 0 20px;
+        font-size: 12px;
+    }
+
+    .container{
+        width: 100%;
+    }
+
+    .container .content{
+        width: 200px;
+        font-size: 11px;
+    }
+
+    .search{
+        margin: 0 0 0 20px;
+    }
+
+
+}

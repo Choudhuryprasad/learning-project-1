@@ -1,0 +1,2372 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="menuu.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <script src="app.js"></script>
+
+    <title>Menuu</title>
+
+</head>
+
+<body>
+
+    <!--Menu-->
+
+    <div class="menu" id="blur">
+
+        <!--Navbar-->
+
+        <div class="navbar">
+            <div class="box">
+                <i class='fa-solid fa-apple-whole fa-9x'></i>
+            </div>
+            <div class="items">
+                <a href="index.html"><i class="fa-solid fa-house"></i></a>
+                <a href="#hotel"><i class="fa-solid fa-bell-concierge"></i></a>
+                <a href="#about"><i class="fa-solid fa-user"></i></a>
+                <a href="#setting"><i class="fa-solid fa-bars"></i></a>
+            </div>
+
+        </div>
+
+        <!--Main-->
+
+        <div class="main">
+
+            <div class="nav">
+
+                <div class="q">
+                    <div class="name">
+                        <p>NAME</p>
+                    </div>
+                    <div class="search">
+                        <div class="xy">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </div>
+                        <select id="select">
+                            <option>Location</option>
+                            <option>Agra</option>
+                            <option>Ahmedabad</option>
+                            <option>Ajmer</option>
+                            <option>Alappuzha</option>
+                            <option>Allahabad</option>
+                            <option>Amravati</option>
+                            <option>Amritsar</option>
+                            <option>Aurangabad</option>
+                            <option>Bengalur</option>
+                            <option>Bhopal</option>
+                            <option>Bhubaneswar</option>
+                            <option>Chandigarh</option>
+                            <option>Chennei</option>
+                            <option>Coimbatore</option>
+                            <option>Cuttack</option>
+                            <option>Darjeeling</option>
+                            <option>Dehradon</option>
+                            <option>Dheli NCR</option>
+                            <option>Dharamshala</option>
+                            <option>Gangtok</option>
+                            <option>Goa</option>
+                            <option>Gorakhpur</option>
+                            <option>Guntur</option>
+                            <option>Haridwar</option>
+                            <option>Hyderabad</option>
+                            <option>Indore</option>
+                            <option>Jabalpur</option>
+                            <option>Jaipur</option>
+                            <option>Jalandar</option>
+                            <option>Jammu</option>
+                            <option>Jamnagar</option>
+                            <option>Jamsedpur</option>
+                            <option>Jhansi</option>
+                            <option>Jodpur</option>
+                            <option>Junagadh</option>
+                        </select>
+                        <i class="fa-solid fa-grip-lines-vertical"></i>
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <input type="text" id="searchInput" placeholder="Search for your meal"
+                            onkeyup="searchString()-searchString1()-searchString2()-searchString3()-searchString4()-null1()">
+                    </div>
+                </div>
+                <div class="vr">
+                    <img src="scooter.png">
+                    <div class="login">
+                        <button type="button" onclick="toggle()">Login</button>
+                        <img src="user.png" id="im">
+                    </div>
+                </div>
+
+            </div>
+
+            <!--Container 1 Head-->
+
+            <div class="container-head">
+                <img src="star.png">
+                <h4>Popular Food Items <i class="fa-solid fa-arrow-right"></i></h4>
+            </div>
+
+            <!--Container 1-->
+
+            <div class="container" id="container">
+
+                <div class="cards">
+                    <div class=card>
+                        <div class=image>
+                            <img src="pic1.jpg">
+                            <h3>MC Donald's</h3>
+                        </div>
+                        <div class=content>
+                            <h3>MC Donald's</h3>
+                            <div class="line">
+                                <div class="l">
+                                    Burger,Fastfood
+                                </div>
+                                <div class="r">
+                                    <div class="v">
+                                        5.0 <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <p>INR:200/-</p>
+                                </div>
+                            </div>
+                            <div class="bo">
+                                <button type="button" id="1">Add to Cart <i class="fa-solid fa-cart-plus"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cards">
+                    <div class=card>
+                        <div class=image>
+                            <img src="pic2.jpg">
+                            <h3>Chicken Kabab</h3>
+                        </div>
+                        <div class=content>
+                            <h3>Chicken Kabab</h3>
+                            <div class="line">
+                                <div class="o">
+                                    <p>Indian Style,Rosted On Tandoor,From Panjab</p>
+                                </div>
+                                <div class="r">
+                                    <div class="v">
+                                        4.5 <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <p>INR:180/-</p>
+                                </div>
+                            </div>
+
+                            <div class="bon">
+                                <button type="button" id="2">Add to Cart <i class="fa-solid fa-cart-plus"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cards">
+                    <div class=card>
+                        <div class=image>
+                            <img src="pic3.jpg">
+                            <h3>Star Ultimate Pizza</h3>
+                        </div>
+                        <div class=content>
+                            <h3>Star Ultimate Pizza</h3>
+                            <div class="lines">
+                                <div class="l">
+                                    Mashroom Tofings
+                                </div>
+                                <div class="r">
+                                    <div class="v">
+                                        4.1 <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <p>INR:200/-</p>
+                                </div>
+                            </div>
+                            <div class="bo">
+                                <button type="button" id="3">Add to Cart <i class="fa-solid fa-cart-plus"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cards">
+                    <div class=card>
+                        <div class=image>
+                            <img src="pic4.jpg">
+                            <h3>Alu Masala Dosa</h3>
+                        </div>
+                        <div class=content>
+                            <h3>Masala Dosa</h3>
+                            <div class="line">
+                                <div class="l">
+                                    South Indian Dish
+                                </div>
+                                <div class="r">
+                                    <div class="v">
+                                        4.0 <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <p>INR:50/-</p>
+                                </div>
+                            </div>
+                            <div class="bo">
+                                <button type="button" id="4">Add to Cart <i class="fa-solid fa-cart-plus"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cards">
+                    <div class=card>
+                        <div class=image>
+                            <img src="pic5.jpg">
+                            <h3>Vegan's Burger</h3>
+                        </div>
+                        <div class=content>
+                            <h3>Vegan's Burger</h3>
+                            <div class="line">
+                                <div class="l">
+                                    Burger King
+                                </div>
+                                <div class="r">
+                                    <div class="v">
+                                        3.8 <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <p>INR:100/-</p>
+                                </div>
+                            </div>
+                            <div class="bo">
+                                <button type="button" id="5">Add to Cart <i class="fa-solid fa-cart-plus"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cards">
+                    <div class=card>
+                        <div class=image>
+                            <img src="pic6.jpg">
+                            <h3>Ice-Cream Com.</h3>
+                        </div>
+                        <div class=content>
+                            <h3>Ice-Cream</h3>
+                            <div class="line">
+                                <div class="l">
+                                    Dessert
+                                </div>
+                                <div class="r">
+                                    <div class="v">
+                                        3.5 <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <p>INR:100/-</p>
+                                </div>
+                            </div>
+                            <div class="bo">
+                                <button type="button" id="6">Add to Cart <i class="fa-solid fa-cart-plus"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!--Container 2 Head-->
+
+            <div class="container-head">
+                <img src="burger.png">
+                <h4>Fast Food Items <i class="fa-solid fa-arrow-right"></i></h4>
+            </div>
+
+            <!--Container 2-->
+
+            <div class="container" id="container1">
+
+                <div class="cards">
+                    <div class=card>
+                        <div class=image>
+                            <img src="pic7.jpg">
+                            <h3>Special Maggie</h3>
+                        </div>
+                        <div class=content>
+                            <h3>Special Maggie</h3>
+                            <div class="line">
+                                <div class="l">
+                                    Fast food,Spicy
+                                </div>
+                                <div class="r">
+                                    <div class="v">
+                                        4.9 <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <p>INR:150/-</p>
+                                </div>
+                            </div>
+                            <div class="bo">
+                                <button type="button" id="7">Add to Cart <i class="fa-solid fa-cart-plus"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cards">
+                    <div class=card>
+                        <div class=image>
+                            <img src="pic8.jpg">
+                            <h3>Chicken Lolipop</h3>
+                        </div>
+                        <div class=content>
+                            <h3>Chicken Lolipop</h3>
+                            <div class="line">
+                                <div class="l">
+                                    Street Fast Food
+                                </div>
+                                <div class="r">
+                                    <div class="v">
+                                        4.7 <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <p>INR:210/-</p>
+                                </div>
+                            </div>
+
+                            <div class="bon">
+                                <button type="button" id="8">Add to Cart <i class="fa-solid fa-cart-plus"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cards">
+                    <div class=card>
+                        <div class=image>
+                            <img src="pic9.jpg">
+                            <h3>French fries</h3>
+                        </div>
+                        <div class=content>
+                            <h3>French fries</h3>
+                            <div class="lines">
+                                <div class="l">
+                                    Salted,Crispy
+                                </div>
+                                <div class="r">
+                                    <div class="v">
+                                        4.2 <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <p>INR:100/-</p>
+                                </div>
+                            </div>
+                            <div class="bo">
+                                <button type="button" id="9">Add to Cart <i class="fa-solid fa-cart-plus"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cards">
+                    <div class=card>
+                        <div class=image>
+                            <img src="pic10.jpg">
+                            <h3>Chicken Burger</h3>
+                        </div>
+                        <div class=content>
+                            <h3>Chicken Burger</h3>
+                            <div class="line">
+                                <div class="l">
+                                    Filled With Chicken
+                                </div>
+                                <div class="r">
+                                    <div class="v">
+                                        4.0 <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <p>INR:50/-</p>
+                                </div>
+                            </div>
+                            <div class="bo">
+                                <button type="button" id="10">Add to Cart <i class="fa-solid fa-cart-plus"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cards">
+                    <div class=card>
+                        <div class=image>
+                            <img src="pic11.jpg">
+                            <h3>White Pasta</h3>
+                        </div>
+                        <div class=content>
+                            <h3>White Pasta</h3>
+                            <div class="line">
+                                <div class="l">
+                                    White Sauce Pasta
+                                </div>
+                                <div class="r">
+                                    <div class="v">
+                                        3.9 <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <p>INR:150/-</p>
+                                </div>
+                            </div>
+                            <div class="bo">
+                                <button type="button" id="11">Add to Cart <i class="fa-solid fa-cart-plus"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cards">
+                    <div class=card>
+                        <div class=image>
+                            <img src="pic12.jpg">
+                            <h3>LaPinoZ Pizza</h3>
+                        </div>
+                        <div class=content>
+                            <h3>LaPinoZ Pizza</h3>
+                            <div class="line">
+                                <div class="l">
+                                    Italian Fastfood
+                                </div>
+                                <div class="r">
+                                    <div class="v">
+                                        4.1 <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <p>INR:150/-</p>
+                                </div>
+                            </div>
+                            <div class="bo">
+                                <button type="button" id="12">Add to Cart <i class="fa-solid fa-cart-plus"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!--Container 3 Head-->
+
+            <div class="container-head">
+                <img src="meal.png">
+                <h4>Meal Items <i class="fa-solid fa-arrow-right"></i></h4>
+            </div>
+
+            <!--Container 3-->
+
+            <div class="container" id="container2">
+
+                <div class="cards">
+                    <div class=card>
+                        <div class=image>
+                            <img src="pic13.jpg">
+                            <h3>Rajma Chawal</h3>
+                        </div>
+                        <div class=content>
+                            <h3>Rajma Chawal</h3>
+                            <div class="line">
+                                <div class="l">
+                                    Home Made Test
+                                </div>
+                                <div class="r">
+                                    <div class="v">
+                                        4.1 <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <p>INR:199/-</p>
+                                </div>
+                            </div>
+                            <div class="bou">
+                                <button type="button" id="13">Add to Cart <i class="fa-solid fa-cart-plus"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cards">
+                    <div class=card>
+                        <div class=image>
+                            <img src="pic14.jpg">
+                            <h3>Veg Pulao</h3>
+                        </div>
+                        <div class=content>
+                            <h3>Veg Pulao</h3>
+                            <div class="line">
+                                <div class="o">
+                                    Panner,Mashroom And Vegitable Mixed Pulao
+                                </div>
+                                <div class="r">
+                                    <div class="v">
+                                        3.6 <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <p>INR:150/-</p>
+                                </div>
+                            </div>
+
+                            <div class="bon">
+                                <button type="button" id="14">Add to Cart <i class="fa-solid fa-cart-plus"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cards">
+                    <div class=card>
+                        <div class=image>
+                            <img src="pic15.jpg">
+                            <h3>Mattka Biryani</h3>
+                        </div>
+                        <div class=content>
+                            <h3>Mattka Biryani</h3>
+                            <div class="lines">
+                                <div class="l">
+                                    Desi Syle Dum Biryani
+                                </div>
+                                <div class="r">
+                                    <div class="v">
+                                        4.6 <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <p>INR:300/-</p>
+                                </div>
+                            </div>
+                            <div class="bo">
+                                <button type="button" id="15">Add to Cart <i class="fa-solid fa-cart-plus"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cards">
+                    <div class=card>
+                        <div class=image>
+                            <img src="pic16.jpg">
+                            <h3>Vegan's Thali</h3>
+                        </div>
+                        <div class=content>
+                            <h3>Veg Thali</h3>
+                            <div class="line">
+                                <div class="l">
+                                    Indian Items Only
+                                </div>
+                                <div class="r">
+                                    <div class="v">
+                                        3.8 <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <p>INR:150/-</p>
+                                </div>
+                            </div>
+                            <div class="bo">
+                                <button type="button" id="16">Add to Cart <i class="fa-solid fa-cart-plus"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cards">
+                    <div class=card>
+                        <div class=image>
+                            <img src="pic17.jpg">
+                            <h3>Naan Paneer</h3>
+                        </div>
+                        <div class=content>
+                            <h3>Naan Paneer</h3>
+                            <div class="line">
+                                <div class="l">
+                                    Butter Naan,Paneer
+                                </div>
+                                <div class="r">
+                                    <div class="v">
+                                        3.9 <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <p>INR:150/-</p>
+                                </div>
+                            </div>
+                            <div class="bo">
+                                <button type="button" id="17">Add to Cart <i class="fa-solid fa-cart-plus"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cards">
+                    <div class=card>
+                        <div class=image>
+                            <img src="pic18.jpg">
+                            <h3>KFC Meal Combo</h3>
+                        </div>
+                        <div class=content>
+                            <h3>KFC Meal Combo</h3>
+                            <div class="line">
+                                <div class="l">
+                                    All in one Combo
+                                </div>
+                                <div class="r">
+                                    <div class="v">
+                                        4.1 <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <p>INR:679/-</p>
+                                </div>
+                            </div>
+                            <div class="bo">
+                                <button type="button" id="18">Add to Cart <i class="fa-solid fa-cart-plus"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!--Container 4 Head-->
+
+            <div class="container-head">
+                <img src="pizza.png">
+                <h4>Pizza Corner <i class="fa-solid fa-arrow-right"></i></h4>
+            </div>
+
+            <!--Container 4-->
+
+            <div class="container" id="container3">
+
+                <div class="cards">
+                    <div class=card>
+                        <div class=image>
+                            <img src="pic19.jpg">
+                            <h3>Farmhouse Pizza</h3>
+                        </div>
+                        <div class=content>
+                            <h3>Farmhouse Pizza</h3>
+                            <div class="line">
+                                <div class="l">
+                                    Fully Loaded Combo
+                                </div>
+                                <div class="r">
+                                    <div class="v">
+                                        4.5 <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <p>INR:299/-</p>
+                                </div>
+                            </div>
+                            <div class="bou">
+                                <button type="button" id="19">Add to Cart <i class="fa-solid fa-cart-plus"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cards">
+                    <div class=card>
+                        <div class=image>
+                            <img src="pic20.jpg">
+                            <h3>Peppy Paneer Pizza</h3>
+                        </div>
+                        <div class=content>
+                            <h3>Peppy Paneer Pizza</h3>
+                            <div class="line">
+                                <div class="o">
+                                    Flavorful Trio Of Juicy Paneer
+                                </div>
+                                <div class="r">
+                                    <div class="v">
+                                        4.5 <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <p>INR:349/-</p>
+                                </div>
+                            </div>
+
+                            <div class="bon">
+                                <button type="button" id="20">Add to Cart <i class="fa-solid fa-cart-plus"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cards">
+                    <div class=card>
+                        <div class=image>
+                            <img src="pic21.jpg">
+                            <h3>Fiery Jalapeno & Paprika</h3>
+                        </div>
+                        <div class=content>
+                            <h3>Fiery Jalapeno & Paprika</h3>
+                            <div class="lines">
+                                <div class="l">
+                                    Spicy Pizza
+                                </div>
+                                <div class="r">
+                                    <div class="v">
+                                        4.6 <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <p>INR:179/-</p>
+                                </div>
+                            </div>
+                            <div class="bo">
+                                <button type="button" id="21">Add to Cart <i class="fa-solid fa-cart-plus"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cards">
+                    <div class=card>
+                        <div class=image>
+                            <img src="pic22.jpg">
+                            <h3>Margherita Pizza</h3>
+                        </div>
+                        <div class=content>
+                            <h3>Margherita Pizza</h3>
+                            <div class="line">
+                                <div class="l">
+                                    100% Real Mozzarella Cheese
+                                </div>
+                                <div class="r">
+                                    <div class="v">
+                                        4.1 <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <p>INR:125/-</p>
+                                </div>
+                            </div>
+                            <div class="bo">
+                                <button type="button" id="22">Add to Cart <i class="fa-solid fa-cart-plus"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cards">
+                    <div class=card>
+                        <div class=image>
+                            <img src="pic23.jpg">
+                            <h3>Indi Tandoori Paneer Pizza</h3>
+                        </div>
+                        <div class=content>
+                            <h3>Indi Tandoori Paneer Pizza</h3>
+                            <div class="line2">
+                                <div class="l">
+                                    It Is Oh-So-Indian
+                                </div>
+                                <div class="r">
+                                    <div class="v">
+                                        4.2 <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <p>INR:349/-</p>
+                                </div>
+                            </div>
+                            <div class="bo">
+                                <button type="button" id="23">Add to Cart <i class="fa-solid fa-cart-plus"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cards">
+                    <div class=card>
+                        <div class=image>
+                            <img src="pic24.jpg">
+                            <h3>Veg Extravaganza Pizza</h3>
+                        </div>
+                        <div class=content>
+                            <h3>Veg Extravaganza Pizza</h3>
+                            <div class="line">
+                                <div class="o">
+                                    Mushroom,Tomato & Extra Cheese
+                                </div>
+                                <div class="r">
+                                    <div class="v">
+                                        4.1 <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <p>INR:679/-</p>
+                                </div>
+                            </div>
+                            <div class="bo">
+                                <button type="button" id="24">Add to Cart <i class="fa-solid fa-cart-plus"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <section class="adds" id="add0">
+                <div class="slider-wrapper">
+                    <div class="slider">
+                        <img id="slide-1" src="ads1.jpg">
+                        <img id="slide-2" src="ads2.jpg">
+                        <img id="slide-3" src="ads3.jpg">
+                        <div class="slider-nav">
+                            <a href="#slide-1"></a>
+                            <a href="#slide-2"></a>
+                            <a href="#slide-3"></a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--Container 5 Head-->
+
+            <div class="container-head">
+                <img src="soda.png">
+                <h4>Cool Parlour <i class="fa-solid fa-arrow-right"></i></h4>
+            </div>
+
+            <!--Container 5-->
+
+            <div class="container5" id="container4">
+
+                <div class="cards">
+                    <div class=card>
+                        <div class=image>
+                            <img src="pic25.jpg">
+                            <h3>Coka Cola</h3>
+                        </div>
+                        <div class=content>
+                            <h3>Coka Cola</h3>
+                            <div class="line">
+                                <div class="l">
+                                    Chilled
+                                </div>
+                                <div class="r">
+                                    <div class="v">
+                                        3.9 <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <p>INR:149/-</p>
+                                </div>
+                            </div>
+                            <div class="bou">
+                                <button type="button" id="25">Add to Cart <i class="fa-solid fa-cart-plus"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cards">
+                    <div class=card>
+                        <div class=image>
+                            <img src="pic26.jpg">
+                            <h3>Ice-Pice</h3>
+                        </div>
+                        <div class=content>
+                            <h3>Ice-Pice</h3>
+                            <div class="line">
+                                <div class="l">
+                                    Made Up Milk
+                                </div>
+                                <div class="r">
+                                    <div class="v">
+                                        4.2 <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <p>INR:249/-</p>
+                                </div>
+                            </div>
+
+                            <div class="bon">
+                                <button type="button" id="26">Add to Cart <i class="fa-solid fa-cart-plus"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cards">
+                    <div class=card>
+                        <div class=image>
+                            <img src="pic27.jpg">
+                            <h3>Drink Combo</h3>
+                        </div>
+                        <div class=content>
+                            <h3>Drink Combo</h3>
+                            <div class="lines">
+                                <div class="l">
+                                    Drink,Fries
+                                </div>
+                                <div class="r">
+                                    <div class="v">
+                                        4.5 <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <p>INR:259/-</p>
+                                </div>
+                            </div>
+                            <div class="bo">
+                                <button type="button" id="27">Add to Cart <i class="fa-solid fa-cart-plus"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cards">
+                    <div class=card>
+                        <div class=image>
+                            <img src="pic28.jpg">
+                            <h3>Coka Cola</h3>
+                        </div>
+                        <div class=content>
+                            <h3>Coka Cola</h3>
+                            <div class="line">
+                                <div class="l">
+                                    Chilled Bottle
+                                </div>
+                                <div class="r">
+                                    <div class="v">
+                                        4.2 <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <p>INR:49/-</p>
+                                </div>
+                            </div>
+                            <div class="bo">
+                                <button type="button" id="28">Add to Cart <i class="fa-solid fa-cart-plus"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cards">
+                    <div class=card>
+                        <div class=image>
+                            <img src="pic29.jpg">
+                            <h3>Mountain Dew</h3>
+                        </div>
+                        <div class=content>
+                            <h3>Mountain Dew</h3>
+                            <div class="line">
+                                <div class="l">
+                                    Chilled
+                                </div>
+                                <div class="r">
+                                    <div class="v">
+                                        3.0 <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <p>INR:239/-</p>
+                                </div>
+                            </div>
+                            <div class="bo">
+                                <button type="button" id="29">Add to Cart <i class="fa-solid fa-cart-plus"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cards">
+                    <div class=card>
+                        <div class=image>
+                            <img src="pic30.jpg">
+                            <h3>Pepsi</h3>
+                        </div>
+                        <div class=content>
+                            <h3>Pepsi</h3>
+                            <div class="line">
+                                <div class="l">
+                                    Chilled
+                                </div>
+                                <div class="r">
+                                    <div class="v">
+                                        4.6 <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <p>INR:239/-</p>
+                                </div>
+                            </div>
+                            <div class="bo">
+                                <button type="button" id="30">Add to Cart <i class="fa-solid fa-cart-plus"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!--Footer-->
+
+            <div class="footer">
+                <hr>
+                <p class="copy">© 2023 - All Rights Reserved</p>
+            </div>
+        </div>
+
+        <!--Right-->
+
+        <div class="right">
+
+            <div class="upper">
+                <h3><i class="fa-solid fa-cart-shopping"></i><span>C</span>art</h3>
+
+            </div>
+
+            <div class="middle" id="rate">
+                <div id="item">
+                    <div class="space">
+                        <div class="l">
+                            <img src="pic1.jpg">
+                        </div>
+                        <div class="r">
+                            <button onclick="b1()"><i class="fa-solid fa-xmark"></i></button>
+                            <p>MC Donald's <span id="qan1">(1)</span> <br>INR: 200.00/-</p>
+                        </div>
+                    </div>
+
+                    <div class="space">
+                        <div class="l">
+                            <img src="pic2.jpg">
+                        </div>
+                        <div class="r">
+                            <button onclick="b2()"><i class="fa-solid fa-xmark"></i></button>
+                            <p>Chicken Kabab <span id="qan1">(1)</span> <br>INR: 180.00/-</p>
+                        </div>
+                    </div>
+
+                    <div class="space">
+                        <div class="l">
+                            <img src="pic3.jpg">
+                        </div>
+                        <div class="r">
+                            <button onclick="b3()" id="bt3"><i class="fa-solid fa-xmark"></i></button>
+                            <p>Star Ultimate Pizza <span id="qan1">(1)</span> <br>INR: 200.00/-</p>
+                        </div>
+                    </div>
+
+                    <div class="space">
+                        <div class="l">
+                            <img src="pic4.jpg">
+                        </div>
+                        <div class="r">
+                            <button onclick="b4()"><i class="fa-solid fa-xmark"></i></button>
+                            <p>Masala Dosa <span id="qan1">(1)</span> <br>INR: 50.00/-</p>
+                        </div>
+                    </div>
+
+                    <div class="space">
+                        <div class="l">
+                            <img src="pic5.jpg">
+                        </div>
+                        <div class="r">
+                            <button onclick="b5()"><i class="fa-solid fa-xmark"></i></button>
+                            <p>Vegan's burger <span id="qan1">(1)</span> <br>INR: 100.00/-</p>
+                        </div>
+                    </div>
+
+                    <div class="space">
+                        <div class="l">
+                            <img src="pic6.jpg">
+                        </div>
+                        <div class="r" id="r6">
+                            <button onclick="b6()" id="bt6"><i class="fa-solid fa-xmark"></i></button>
+                            <p>Ice-Cream <span id="qan1">(1)</span> <br>INR: 100.00/-</p>
+                        </div>
+                    </div>
+
+                    <div class="space">
+                        <div class="l">
+                            <img src="pic7.jpg">
+                        </div>
+                        <div class="r">
+                            <button onclick="b7()"><i class="fa-solid fa-xmark"></i></button>
+                            <p>Special Maggie <span id="qan1">(1)</span> <br>INR: 200.00/-</p>
+                        </div>
+                    </div>
+
+                    <div class="space">
+                        <div class="l">
+                            <img src="pic8.jpg">
+                        </div>
+                        <div class="r">
+                            <button onclick="b8()"><i class="fa-solid fa-xmark"></i></button>
+                            <p>Chicken Lolipop <span id="qan1">(1)</span> <br>INR: 210.00/-</p>
+                        </div>
+                    </div>
+
+                    <div class="space">
+                        <div class="l">
+                            <img src="pic9.jpg">
+                        </div>
+                        <div class="r">
+                            <button onclick="b9()"><i class="fa-solid fa-xmark"></i></button>
+                            <p>French fries <span id="qan1">(1)</span> <br>INR: 100.00/-</p>
+                        </div>
+                    </div>
+
+                    <div class="space">
+                        <div class="l">
+                            <img src="pic10.jpg">
+                        </div>
+                        <div class="r">
+                            <button onclick="b10()"><i class="fa-solid fa-xmark"></i></button>
+                            <p>Chicken Burger <span id="qan1">(1)</span> <br>INR: 50.00/-</p>
+                        </div>
+                    </div>
+
+                    <div class="space">
+                        <div class="l">
+                            <img src="pic11.jpg">
+                        </div>
+                        <div class="r">
+                            <button onclick="b11()"><i class="fa-solid fa-xmark"></i></button>
+                            <p>White Pasta <span id="qan1">(1)</span> <br>INR: 150.00/-</p>
+                        </div>
+                    </div>
+
+                    <div class="space">
+                        <div class="l">
+                            <img src="pic12.jpg">
+                        </div>
+                        <div class="r">
+                            <button onclick="b12()"><i class="fa-solid fa-xmark"></i></button>
+                            <p>LaPinoZ Pizza <span id="qan1">(1)</span> <br>INR: 150.00/-</p>
+                        </div>
+                    </div>
+
+                    <div class="space">
+                        <div class="l">
+                            <img src="pic13.jpg">
+                        </div>
+                        <div class="r">
+                            <button onclick="b13()"><i class="fa-solid fa-xmark"></i></button>
+                            <p>Rajma Chawal <span id="qan1">(1)</span> <br>INR: 199.00/-</p>
+                        </div>
+                    </div>
+
+                    <div class="space">
+                        <div class="l">
+                            <img src="pic14.jpg">
+                        </div>
+                        <div class="r">
+                            <button onclick="b14()" id="Pulao"><i class="fa-solid fa-xmark"></i></button>
+                            <p>Veg Pulao <span id="qan1">(1)</span> <br>INR: 150.00/-</p>
+                        </div>
+                    </div>
+
+                    <div class="space">
+                        <div class="l">
+                            <img src="pic15.jpg">
+                        </div>
+                        <div class="r">
+                            <button onclick="b15()"><i class="fa-solid fa-xmark"></i></button>
+                            <p>Mattka Biryani <span id="qan1">(1)</span> <br>INR: 300.00/-</p>
+                        </div>
+                    </div>
+
+                    <div class="space">
+                        <div class="l">
+                            <img src="pic16.jpg">
+                        </div>
+                        <div class="r">
+                            <button onclick="b16()"><i class="fa-solid fa-xmark"></i></button>
+                            <p>Vegan's Thali <span id="qan1">(1)</span> <br>INR: 150.00/-</p>
+                        </div>
+                    </div>
+
+                    <div class="space">
+                        <div class="l">
+                            <img src="pic17.jpg">
+                        </div>
+                        <div class="r">
+                            <button onclick="b17()"><i class="fa-solid fa-xmark"></i></button>
+                            <p>Naan Paneer <span id="qan1">(1)</span> <br>INR: 150.00/-</p>
+                        </div>
+                    </div>
+
+                    <div class="space">
+                        <div class="l">
+                            <img src="pic18.jpg">
+                        </div>
+                        <div class="r">
+                            <button onclick="b18()"><i class="fa-solid fa-xmark"></i></button>
+                            <p>KFC Meal Com<span id="qan1">(1)</span> <br>INR: 679.00/-</p>
+                        </div>
+                    </div>
+
+                    <div class="space">
+                        <div class="l">
+                            <img src="pic19.jpg">
+                        </div>
+                        <div class="r">
+                            <button onclick="b19()"><i class="fa-solid fa-xmark"></i></button>
+                            <p>Farmhouse Pizza <span id="qan1">(1)</span> <br>INR: 229.00/-</p>
+                        </div>
+                    </div>
+
+                    <div class="space">
+                        <div class="l">
+                            <img src="pic20.jpg">
+                        </div>
+                        <div class="r">
+                            <button onclick="b20()"><i class="fa-solid fa-xmark"></i></button>
+                            <p>Peppy Paneer<span id="qan1">(1)</span> <br>INR: 349.00/-</p>
+                        </div>
+                    </div>
+
+                    <div class="space">
+                        <div class="l">
+                            <img src="pic21.jpg">
+                        </div>
+                        <div class="r">
+                            <button onclick="b21()"><i class="fa-solid fa-xmark"></i></button>
+                            <p>Fiery Jalapeno <span id="qan1">(1)</span> <br>INR: 179.00/-</p>
+                        </div>
+                    </div>
+
+                    <div class="space">
+                        <div class="l">
+                            <img src="pic22.jpg">
+                        </div>
+                        <div class="r">
+                            <button onclick="b22()"><i class="fa-solid fa-xmark"></i></button>
+                            <p>Margherita Veg<span id="qan1">(1)</span> <br>INR: 125.00/-</p>
+                        </div>
+                    </div>
+
+                    <div class="space">
+                        <div class="l">
+                            <img src="pic23.jpg">
+                        </div>
+                        <div class="r">
+                            <button onclick="b23()"><i class="fa-solid fa-xmark"></i></button>
+                            <p>Indi Tandoori <span id="qan1">(1)</span> <br>INR: 349.00/-</p>
+                        </div>
+                    </div>
+
+                    <div class="space">
+                        <div class="l">
+                            <img src="pic24.jpg">
+                        </div>
+                        <div class="r">
+                            <button onclick="b24()"><i class="fa-solid fa-xmark"></i></button>
+                            <p>Extravaganza<span id="qan1">(1)</span> <br>INR: 679.00/-</p>
+                        </div>
+                    </div>
+
+                    <div class="space">
+                        <div class="l">
+                            <img src="pic25.jpg">
+                        </div>
+                        <div class="r">
+                            <button onclick="b25()"><i class="fa-solid fa-xmark"></i></button>
+                            <p>Coka Cola(Low)<span id="qan1">(1)</span> <br>INR: 149.00/-</p>
+                        </div>
+                    </div>
+
+                    <div class="space">
+                        <div class="l">
+                            <img src="pic26.jpg">
+                        </div>
+                        <div class="r">
+                            <button onclick="b26()"><i class="fa-solid fa-xmark"></i></button>
+                            <p>Ice-Pice (Milk)<span id="qan1">(1)</span> <br>INR: 249.00/-</p>
+                        </div>
+                    </div>
+
+                    <div class="space">
+                        <div class="l">
+                            <img src="pic27.jpg">
+                        </div>
+                        <div class="r">
+                            <button onclick="b27()"><i class="fa-solid fa-xmark"></i></button>
+                            <p>Drink Combo <span id="qan1">(1)</span> <br>INR: 259.00/-</p>
+                        </div>
+                    </div>
+
+                    <div class="space">
+                        <div class="l">
+                            <img src="pic28.jpg">
+                        </div>
+                        <div class="r">
+                            <button onclick="b28()"><i class="fa-solid fa-xmark"></i></button>
+                            <p>Coka Cola(Low)<span id="qan1">(1)</span> <br>INR: 49.00/-</p>
+                        </div>
+                    </div>
+
+                    <div class="space">
+                        <div class="l">
+                            <img src="pic29.jpg">
+                        </div>
+                        <div class="r">
+                            <button onclick="b29()"><i class="fa-solid fa-xmark"></i></button>
+                            <p>Mountain dew <span id="qan1">(1)</span> <br>INR: 239.00/-</p>
+                        </div>
+                    </div>
+
+                    <div class="space">
+                        <div class="l">
+                            <img src="pic30.jpg">
+                        </div>
+                        <div class="r">
+                            <button onclick="b30()"><i class="fa-solid fa-xmark"></i></button>
+                            <p>Pepsi(2 Left)<span id="qan1">(1)</span> <br>INR: 239.00/-</p>
+                        </div>
+                    </div>
+
+
+
+                </div>
+                <img src="box.png" id="img" style="display: none;">
+                <hr id="to">
+                <div class="total">
+                    <div class="tleft">
+                        <p>Total:</p>
+                    </div>
+                    <div class="tright">
+                        <p id="total">0</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="lower">
+                <div class="cart">
+                    <i class="fa-solid fa-cart-plus"></i>
+                    <p id="coount">0</p>
+                </div>
+                <button type="button" id="Buy"><i class="fa-solid fa-bolt"></i> Buy Now</button>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div id="popup">
+        <!-- <h2>Your Order</h2> -->
+        <div class="loginbox">
+            <div id="form1">
+                <h2>LOGIN FORM</h2>
+
+                <div class="inputbox">
+                    <span class="icon"><i class="fa-solid fa-user"></i>
+                    </span>
+                    <input type="name" required>
+                    <label>Username</label>
+                </div>
+
+                <div class="inputbox">
+                    <span class="icon">
+                        <i class="fa-solid fa-eye-slash" onclick="eye()"></i>
+                    </span>
+                    <input type="password" id="eye" required>
+                    <label>Password</label>
+                </div>
+
+                <div class="bb">
+                    <button type="button" onclick="toggle()">Login</button>
+                </div>
+                <div class="register-link">
+                    <p>Don't have an account?<a href="#" onclick="register()">
+                            Register Here
+                        </a> <br>
+                        <a href="#" id="forget" onclick="forget()">
+                            Forget Password
+                        </a>
+                    </p>
+                    <ion-icon name="heart"></ion-icon>
+                </div>
+
+            </div>
+
+            <div class="form2">
+
+                <h2>REGISTER FORM</h2>
+                <div class="inputbox">
+                    <span class="icon"><i class="fa-solid fa-user"></i>
+                    </span>
+                    <input type="name" required>
+                    <label>Username</label>
+                </div>
+                <div class="inputbox">
+                    <span class="icon">
+                        <i class="fa-solid fa-envelope"></i>
+                    </span>
+                    <input type="text" required>
+                    <label>Email</label>
+                </div>
+                <div class="inputbox">
+                    <span class="icon">
+                        <i class="fa-solid fa-eye-slash" onclick="eye4()"></i>
+                    </span>
+                    <input type="password" id="eye4" required>
+                    <label>Password</label>
+                </div>
+                <div class="inputbox">
+                    <span class="icon">
+                        <i class="fa-solid fa-eye-slash" onclick="eye5()"></i>
+                    </span>
+                    <input type="password" id="eye5" required>
+                    <label> Confirm Password</label>
+
+                </div>
+
+                <div class="bb">
+                    <button type="button" onclick="toggle()">Register</button>
+                </div>
+                <div class="register-link">
+                    <p>Have an account?<a href="#" onclick="login()">
+                            Login Here
+                        </a></p>
+                    <ion-icon name="heart"></ion-icon>
+                </div>
+
+
+            </div>
+
+            <div id="form3">
+                <h2>FORGET PASSWORD</h2>
+
+                <div class="inputbox">
+                    <span class="icon">
+                        <i class="fa-solid fa-envelope"></i>
+                    </span>
+                    <input type="text" required>
+                    <label>Email</label>
+                </div>
+
+                <div class="inputbox">
+                    <span class="icon"><i class="fa-solid fa-arrows-rotate"></i>
+                    </span>
+                    <input type="name" required>
+                    <label>OTP</label>
+                </div>
+
+                <div class="inputbox">
+                    <span class="icon">
+                        <i class="fa-solid fa-eye-slash" onclick="eye1()"></i>
+                    </span>
+                    <input type="password" id="eye1" required>
+                    <label>Old Password</label>
+                </div>
+                <div class="inputbox">
+                    <span class="icon">
+                        <i class="fa-solid fa-eye-slash" onclick="eye2()"></i>
+                    </span>
+                    <input type="password" id="eye2" required>
+                    <label>New Password</label>
+                </div>
+
+                <div class="inputbox">
+                    <span class="icon">
+                        <i class="fa-solid fa-eye-slash" onclick="eye3()"></i>
+                    </span>
+                    <input type="password" id="eye3" required>
+                    <label>Rewrite Password</label>
+                </div>
+
+                <div class="bb">
+                    <button type="button" onclick="toggle()">Submit</button>
+                </div>
+                <div class="register-link">
+                    <p>Don't have an account?<a href="#" onclick="register()">
+                            Register Here
+                        </a> <br>
+                        <a href="#" id="forget" onclick="login()">
+                            Login
+                        </a>
+                    </p>
+                    <ion-icon name="heart"></ion-icon>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <!-- <script src="app.js"></script> -->
+
+    <!-- js for search foodd items -->
+
+    <script>
+        const searchString = () => {
+
+            let head = document.getElementsByClassName('container-head')[0];
+            head.style.display = "none";
+
+            var aaaa = document.getElementById('add0');
+            aaaa.style.display = "none";
+
+            const fillter = document.getElementById('searchInput').value.toUpperCase();
+
+            let a = document.getElementById('container');
+
+            for (let i = 0; i < 6; i++) {
+
+                let d = a.getElementsByClassName('image')[i];
+
+                let data = d.getElementsByTagName('h3')[0];
+
+                let h = a.getElementsByClassName('cards')[i];
+
+                if (data) {
+
+                    let textvalue = data.textContent.toUpperCase();
+
+
+                    if (textvalue.indexOf(fillter) !== -1) {
+                        h.style.display = "";
+                    }
+
+                    else {
+                        h.style.display = "none";
+                    }
+
+                }
+
+            }
+
+        }
+
+        const searchString1 = () => {
+
+            let head = document.getElementsByClassName('container-head')[1];
+            head.style.display = "none";
+
+
+            const fillter = document.getElementById('searchInput').value.toUpperCase();
+
+            let bbb = document.getElementById('container1');
+
+
+            for (let i = 0; i < 6; i++) {
+
+                let dd = bbb.getElementsByClassName('image')[i];
+
+                let data = dd.getElementsByTagName('h3')[0];
+
+                let hh = bbb.getElementsByClassName('cards')[i];
+
+                if (data) {
+
+                    let textvalue = data.textContent.toUpperCase();
+
+                    console.log(textvalue)
+
+
+                    if (textvalue.indexOf(fillter) !== -1) {
+                        hh.style.display = "";
+                    }
+
+                    else {
+                        hh.style.display = "none";
+                    }
+
+                }
+
+            }
+
+        }
+
+        const searchString2 = () => {
+
+            let head = document.getElementsByClassName('container-head')[2];
+            head.style.display = "none";
+
+
+            const fillter = document.getElementById('searchInput').value.toUpperCase();
+
+            let ccc = document.getElementById('container2');
+
+
+            for (let i = 0; i < 6; i++) {
+
+                let dd = ccc.getElementsByClassName('image')[i];
+
+                let data = dd.getElementsByTagName('h3')[0];
+
+                let hh = ccc.getElementsByClassName('cards')[i];
+
+                if (data) {
+
+                    let textvalue = data.textContent.toUpperCase();
+
+                    console.log(textvalue)
+
+
+                    if (textvalue.indexOf(fillter) !== -1) {
+                        hh.style.display = "";
+                    }
+
+                    else {
+                        hh.style.display = "none";
+                    }
+
+                }
+
+            }
+
+        }
+
+        const searchString3 = () => {
+
+            let head = document.getElementsByClassName('container-head')[3];
+            head.style.display = "none";
+
+
+            const fillter = document.getElementById('searchInput').value.toUpperCase();
+
+            let ddd = document.getElementById('container3');
+
+
+            for (let i = 0; i < 6; i++) {
+
+                let dd = ddd.getElementsByClassName('image')[i];
+
+                let data = dd.getElementsByTagName('h3')[0];
+
+                let hh = ddd.getElementsByClassName('cards')[i];
+
+                if (data) {
+
+                    let textvalue = data.textContent.toUpperCase();
+
+                    console.log(textvalue)
+
+
+                    if (textvalue.indexOf(fillter) !== -1) {
+                        hh.style.display = "";
+                    }
+
+                    else {
+                        hh.style.display = "none";
+                    }
+
+                }
+
+            }
+
+        }
+
+        const searchString4 = () => {
+
+            let head = document.getElementsByClassName('container-head')[4];
+            head.style.display = "none";
+
+
+            const fillter = document.getElementById('searchInput').value.toUpperCase();
+
+            let eee = document.getElementById('container4');
+
+
+            for (let i = 0; i < 6; i++) {
+
+                let dd = eee.getElementsByClassName('image')[i];
+
+                let data = dd.getElementsByTagName('h3')[0];
+
+                let hh = eee.getElementsByClassName('cards')[i];
+
+                if (data) {
+
+                    let textvalue = data.textContent.toUpperCase();
+
+                    console.log(textvalue)
+
+
+                    if (textvalue.indexOf(fillter) !== -1) {
+                        hh.style.display = "";
+                    }
+
+                    else {
+                        hh.style.display = "none";
+                    }
+
+                }
+
+            }
+
+        }
+
+        function null1() {
+            const fillter = document.getElementById('searchInput').value.toUpperCase();
+
+            if (fillter === "") {
+                for (let i = 0; i < 5; i++) {
+                    let head = document.getElementsByClassName('container-head')[i];
+                    head.style.display = "flex";
+                }
+
+                var aaaa = document.getElementById('add0');
+                aaaa.style.display = "flex";
+
+            }
+        }
+
+    </script>
+
+    <script>
+
+        function toggle() {
+
+            var blur = document.getElementById('blur');
+            blur.classList.toggle('active');
+
+            var popup = document.getElementById('popup');
+            popup.classList.toggle('active');
+        }
+
+        var a;
+
+        function eye() {
+            if (a == 1) {
+                document.getElementById('eye').type = 'password';
+                a = 0;
+            }
+            else {
+                document.getElementById('eye').type = 'text';
+                a = 1;
+            }
+        }
+
+        function eye1() {
+            if (a == 1) {
+                document.getElementById('eye1').type = 'password';
+                a = 0;
+            }
+            else {
+                document.getElementById('eye1').type = 'text';
+                a = 1;
+            }
+        }
+
+        function eye2() {
+            if (a == 1) {
+                document.getElementById('eye2').type = 'password';
+                a = 0;
+            }
+            else {
+                document.getElementById('eye2').type = 'text';
+                a = 1;
+            }
+        }
+
+        function eye3() {
+            if (a == 1) {
+                document.getElementById('eye3').type = 'password';
+                a = 0;
+            }
+            else {
+                document.getElementById('eye3').type = 'text';
+                a = 1;
+            }
+        }
+
+        function eye4() {
+            if (a == 1) {
+                document.getElementById('eye4').type = 'password';
+                a = 0;
+            }
+            else {
+                document.getElementById('eye4').type = 'text';
+                a = 1;
+            }
+        }
+
+        function eye5() {
+            if (a == 1) {
+                document.getElementById('eye5').type = 'password';
+                a = 0;
+            }
+            else {
+                document.getElementById('eye5').type = 'text';
+                a = 1;
+            }
+        }
+
+        function register() {
+            var on = document.getElementsByClassName('form2')[0];
+            on.style.display = "block";
+            var off = document.getElementById('form1');
+            off.style.display = "none";
+            var form = document.getElementById('form3');
+            form.style.display = "none";
+            var up = document.getElementById('popup');
+            up.style.width = "400px";
+        }
+
+        function login() {
+            var on = document.getElementsByClassName('form2')[0];
+            on.style.display = "none";
+            var off = document.getElementById('form1');
+            off.style.display = "block";
+            var form = document.getElementById('form3');
+            form.style.display = "none";
+            var up = document.getElementById('popup');
+            up.style.width = "370px";
+        }
+
+        function forget() {
+            var on = document.getElementsByClassName('form2')[0];
+            on.style.display = "none";
+            var off = document.getElementById('form1');
+            off.style.display = "none";
+            var form = document.getElementById('form3');
+            form.style.display = "block";
+            var up = document.getElementById('popup');
+            up.style.width = "400px";
+        }
+
+    </script>
+
+    <script>
+
+        var one = document.getElementById("1");
+        var two = document.getElementById("2");
+        var three = document.getElementById("3");
+        var four = document.getElementById("4");
+        var five = document.getElementById("5");
+        var six = document.getElementById("6");
+        var seven = document.getElementById("7");
+        var eight = document.getElementById("8");
+        var nine = document.getElementById("9");
+        var ten = document.getElementById("10");
+        var one1 = document.getElementById("11");
+        var one2 = document.getElementById("12");
+        var one3 = document.getElementById("13");
+        var one4 = document.getElementById("14");
+        var one5 = document.getElementById("15");
+        var one6 = document.getElementById("16");
+        var one7 = document.getElementById("17");
+        var one8 = document.getElementById("18");
+        var one9 = document.getElementById("19");
+        var two0 = document.getElementById("20");
+        var two1 = document.getElementById("21");
+        var two2 = document.getElementById("22");
+        var two3 = document.getElementById("23");
+        var two4 = document.getElementById("24");
+        var two5 = document.getElementById("25");
+        var two6 = document.getElementById("26");
+        var two7 = document.getElementById("27");
+        var two8 = document.getElementById("28");
+        var two9 = document.getElementById("29");
+        var three0 = document.getElementById("30");
+        var item = document.getElementById("item");
+        var t = document.getElementById("total");
+        var c = document.getElementById("coount");
+        var to = document.getElementById("to");
+        var img = document.getElementById("img");
+        var rate = document.createElement("br");
+        var buynow = document.getElementById("Buy");
+
+        let arr = [200, 180, 200, 50, 100, 100, 150, 210, 100, 50, 150, 150, 199, 150, 300, 150, 150, 679, 299, 349, 179, 125, 349, 679, 149, 249, 259, 49, 239, 239];
+
+        var img = document.getElementById('')
+
+        var sum = 0;
+        var i = 0;
+
+        one.addEventListener("click", function () {
+            document.getElementsByClassName('space')[0].style.display = "flex";
+            sum = sum + arr[0];
+            t.innerText = sum;
+            i++;
+            c.innerText = i;
+        });
+
+        two.addEventListener("click", function () {
+            sum = sum + arr[1];
+            document.getElementsByClassName('space')[1].style.display = "flex";
+            t.innerText = sum;
+            i++;
+            c.innerText = i;
+
+        });
+
+        three.addEventListener("click", function () {
+            sum = sum + arr[2];
+            document.getElementsByClassName('space')[2].style.display = "flex";
+            t.innerText = sum;
+            i++;
+            c.innerText = i;
+
+        });
+
+        four.addEventListener("click", function () {
+            sum = sum + arr[3];
+            document.getElementsByClassName('space')[3].style.display = "flex";
+            t.innerText = sum;
+            i++;
+            c.innerText = i;
+        });
+
+        five.addEventListener("click", function () {
+            sum = sum + arr[4];
+            document.getElementsByClassName('space')[4].style.display = "flex";
+            t.innerText = sum;
+            i++;
+            c.innerText = i;
+        });
+
+        six.addEventListener("click", function () {
+            sum = sum + arr[5];
+            document.getElementsByClassName('space')[5].style.display = "flex";
+            t.innerText = sum;
+            i++;
+            c.innerText = i;
+        });
+
+        seven.addEventListener("click", function () {
+            sum = sum + arr[6];
+            document.getElementsByClassName('space')[6].style.display = "flex";
+            t.innerText = sum;
+            i++;
+            c.innerText = i;
+        });
+
+        eight.addEventListener("click", function () {
+            sum = sum + arr[7];
+            document.getElementsByClassName('space')[7].style.display = "flex";
+            t.innerText = sum;
+            i++;
+            c.innerText = i;
+        });
+
+        nine.addEventListener("click", function () {
+            sum = sum + arr[8];
+            document.getElementsByClassName('space')[8].style.display = "flex";
+            t.innerText = sum;
+            i++;
+            c.innerText = i;
+
+        });
+
+        ten.addEventListener("click", function () {
+            sum = sum + arr[9];
+            document.getElementsByClassName('space')[9].style.display = "flex";
+            t.innerText = sum;
+            i++;
+            c.innerText = i;
+
+
+        });
+
+        one1.addEventListener("click", function () {
+            sum = sum + arr[10];
+            document.getElementsByClassName('space')[10].style.display = "flex";
+            t.innerText = sum;
+            i++;
+            c.innerText = i;
+
+
+        });
+
+        one2.addEventListener("click", function () {
+            sum = sum + arr[11];
+            document.getElementsByClassName('space')[11].style.display = "flex";
+            t.innerText = sum;
+            i++;
+            c.innerText = i;
+
+        });
+
+        one3.addEventListener("click", function () {
+            sum = sum + arr[12];
+            document.getElementsByClassName('space')[12].style.display = "flex";
+            t.innerText = sum;
+            i++;
+            c.innerText = i;
+
+        });
+
+        one4.addEventListener("click", function () {
+            sum = sum + arr[13];
+            document.getElementsByClassName('space')[13].style.display = "flex";
+            t.innerText = sum;
+            i++;
+            c.innerText = i;
+
+
+        });
+
+        one5.addEventListener("click", function () {
+            sum = sum + arr[14];
+            document.getElementsByClassName('space')[14].style.display = "flex";
+            t.innerText = sum;
+            i++;
+            c.innerText = i;
+
+
+        });
+
+        one6.addEventListener("click", function () {
+            sum = sum + arr[15];
+            document.getElementsByClassName('space')[15].style.display = "flex";
+            t.innerText = sum;
+
+            i++;
+            c.innerText = i;
+
+        });
+
+        one7.addEventListener("click", function () {
+            sum = sum + arr[16];
+            document.getElementsByClassName('space')[16].style.display = "flex";
+            t.innerText = sum;
+            i++;
+            c.innerText = i;
+
+        });
+
+        one8.addEventListener("click", function () {
+            sum = sum + arr[17];
+            document.getElementsByClassName('space')[17].style.display = "flex";
+            t.innerText = sum;
+            i++;
+            c.innerText = i;
+
+        });
+
+        one9.addEventListener("click", function () {
+            sum = sum + arr[18];
+            document.getElementsByClassName('space')[18].style.display = "flex";
+            t.innerText = sum;
+            i++;
+            c.innerText = i;
+
+        });
+
+        two0.addEventListener("click", function () {
+            sum = sum + arr[19];
+            document.getElementsByClassName('space')[19].style.display = "flex";
+            t.innerText = sum;
+
+            i++;
+            c.innerText = i;
+
+        });
+
+        two1.addEventListener("click", function () {
+            sum = sum + arr[20];
+            document.getElementsByClassName('space')[20].style.display = "flex";
+            t.innerText = sum;
+
+            i++;
+            c.innerText = i;
+        });
+
+        two2.addEventListener("click", function () {
+            sum = sum + arr[21];
+            document.getElementsByClassName('space')[21].style.display = "flex";
+            t.innerText = sum;
+            i++;
+            c.innerText = i;
+
+        });
+
+        two3.addEventListener("click", function () {
+            sum = sum + arr[22];
+            document.getElementsByClassName('space')[22].style.display = "flex";
+            t.innerText = sum;
+            i++;
+            c.innerText = i;
+
+        });
+
+        two4.addEventListener("click", function () {
+            sum = sum + arr[23];
+            document.getElementsByClassName('space')[23].style.display = "flex";
+            t.innerText = sum;
+            i++;
+            c.innerText = i;
+
+        });
+
+        two5.addEventListener("click", function () {
+            sum = sum + arr[24];
+            document.getElementsByClassName('space')[24].style.display = "flex";
+            t.innerText = sum;
+
+            i++;
+            c.innerText = i;
+        });
+
+        two6.addEventListener("click", function () {
+            sum = sum + arr[25];
+            document.getElementsByClassName('space')[25].style.display = "flex";
+            t.innerText = sum;
+
+            i++;
+            c.innerText = i;
+
+        });
+
+        two7.addEventListener("click", function () {
+            sum = sum + arr[26];
+            document.getElementsByClassName('space')[26].style.display = "flex";
+            t.innerText = sum;
+            i++;
+            c.innerText = i;
+
+        });
+
+        two8.addEventListener("click", function () {
+            sum = sum + arr[27];
+            document.getElementsByClassName('space')[27].style.display = "flex";
+            t.innerText = sum;
+            i++;
+            c.innerText = i;
+
+        });
+
+        two9.addEventListener("click", function () {
+            sum = sum + arr[28];
+            document.getElementsByClassName('space')[28].style.display = "flex";
+            t.innerText = sum;
+            i++;
+            c.innerText = i;
+
+        });
+
+        three0.addEventListener("click", function () {
+            sum = sum + arr[29];
+            document.getElementsByClassName('space')[29].style.display = "flex";
+            t.innerText = sum;
+            i++;
+            c.innerText = i;
+
+        });
+
+        function b1() {
+            sum = sum - arr[0];
+            document.getElementsByClassName('space')[0].style.display = "none";
+            t.innerText = sum;
+            i--;
+            c.innerText = i;
+        }
+
+        function b2() {
+            sum = sum - arr[1];
+            document.getElementsByClassName('space')[1].style.display = "none";
+            t.innerText = sum;
+            i--;
+            c.innerText = i;
+        }
+
+        function b3() {
+            sum = sum - arr[2];
+            document.getElementsByClassName('space')[2].style.display = "none";
+            t.innerText = sum;
+            i--;
+            c.innerText = i;
+        }
+
+        function b4() {
+            sum = sum - arr[3];
+            document.getElementsByClassName('space')[3].style.display = "none";
+            t.innerText = sum;
+            i--;
+            c.innerText = i;
+        }
+
+        function b5() {
+            sum = sum - arr[4];
+            document.getElementsByClassName('space')[4].style.display = "none";
+            t.innerText = sum;
+            i--;
+            c.innerText = i;
+        }
+
+        function b6() {
+            sum = sum - arr[5];
+            document.getElementsByClassName('space')[5].style.display = "none";
+            t.innerText = sum;
+            i--;
+            c.innerText = i;
+        }
+
+        function b7() {
+            sum = sum - arr[6];
+            document.getElementsByClassName('space')[6].style.display = "none";
+            t.innerText = sum;
+            i--;
+            c.innerText = i;
+        }
+
+        function b8() {
+            sum = sum - arr[7];
+            document.getElementsByClassName('space')[7].style.display = "none";
+            t.innerText = sum;
+            i--;
+            c.innerText = i;
+        }
+
+        function b9() {
+            sum = sum - arr[8];
+            document.getElementsByClassName('space')[8].style.display = "none";
+            t.innerText = sum;
+            i--;
+            c.innerText = i;
+        }
+
+        function b10() {
+            sum = sum - arr[9];
+            document.getElementsByClassName('space')[9].style.display = "none";
+            t.innerText = sum;
+            i--;
+            c.innerText = i;
+        }
+
+        function b11() {
+            sum = sum - arr[10];
+            document.getElementsByClassName('space')[10].style.display = "none";
+            t.innerText = sum;
+            i--;
+            c.innerText = i;
+        }
+
+        function b12() {
+            sum = sum - arr[11];
+            document.getElementsByClassName('space')[11].style.display = "none";
+            t.innerText = sum;
+            i--;
+            c.innerText = i;
+        }
+
+        function b13() {
+            sum = sum - arr[12];
+            document.getElementsByClassName('space')[12].style.display = "none";
+            t.innerText = sum;
+            i--;
+            c.innerText = i;
+        }
+
+        function b14() {
+            sum = sum - arr[13];
+            document.getElementsByClassName('space')[13].style.display = "none";
+            t.innerText = sum;
+            i--;
+            c.innerText = i;
+        }
+
+        function b15() {
+            sum = sum - arr[14];
+            document.getElementsByClassName('space')[14].style.display = "none";
+            t.innerText = sum;
+            i--;
+            c.innerText = i;
+        }
+
+        function b16() {
+            sum = sum - arr[15];
+            document.getElementsByClassName('space')[15].style.display = "none";
+            t.innerText = sum;
+            i--;
+            c.innerText = i;
+        }
+
+        function b17() {
+            sum = sum - arr[16];
+            document.getElementsByClassName('space')[16].style.display = "none";
+            t.innerText = sum;
+            i--;
+            c.innerText = i;
+        }
+
+        function b18() {
+            sum = sum - arr[17];
+            document.getElementsByClassName('space')[17].style.display = "none";
+            t.innerText = sum;
+            i--;
+            c.innerText = i;
+        }
+
+        function b19() {
+            sum = sum - arr[18];
+            document.getElementsByClassName('space')[18].style.display = "none";
+            t.innerText = sum;
+            i--;
+            c.innerText = i;
+        }
+
+        function b20() {
+            sum = sum - arr[19];
+            document.getElementsByClassName('space')[19].style.display = "none";
+            t.innerText = sum;
+            i--;
+            c.innerText = i;
+        }
+
+        function b21() {
+            sum = sum - arr[20];
+            document.getElementsByClassName('space')[20].style.display = "none";
+            t.innerText = sum;
+            i--;
+            c.innerText = i;
+        }
+
+        function b22() {
+            sum = sum - arr[21];
+            document.getElementsByClassName('space')[21].style.display = "none";
+            t.innerText = sum;
+            i--;
+            c.innerText = i;
+        }
+
+        function b23() {
+            sum = sum - arr[22];
+            document.getElementsByClassName('space')[22].style.display = "none";
+            t.innerText = sum;
+            i--;
+            c.innerText = i;
+        }
+
+        function b24() {
+            sum = sum - arr[23];
+            document.getElementsByClassName('space')[23].style.display = "none";
+            t.innerText = sum;
+            i--;
+            c.innerText = i;
+        }
+
+        function b25() {
+            sum = sum - arr[24];
+            document.getElementsByClassName('space')[24].style.display = "none";
+            t.innerText = sum;
+            i--;
+            c.innerText = i;
+        }
+
+        function b26() {
+            sum = sum - arr[25];
+            document.getElementsByClassName('space')[25].style.display = "none";
+            t.innerText = sum;
+            i--;
+            c.innerText = i;
+        }
+
+        function b27() {
+            sum = sum - arr[26];
+            document.getElementsByClassName('space')[26].style.display = "none";
+            t.innerText = sum;
+            i--;
+            c.innerText = i;
+        }
+
+        function b28() {
+            sum = sum - arr[27];
+            document.getElementsByClassName('space')[27].style.display = "none";
+            t.innerText = sum;
+            i--;
+            c.innerText = i;
+        }
+
+        function b29() {
+            sum = sum - arr[28];
+            document.getElementsByClassName('space')[28].style.display = "none";
+            t.innerText = sum;
+            i--;
+            c.innerText = i;
+        }
+
+        function b30() {
+            sum = sum - arr[29];
+            document.getElementsByClassName('space')[29].style.display = "none";
+            t.innerText = sum;
+            i--;
+            c.innerText = i;
+        }
+
+    </script>
+
+    <script>
+        function verify() {
+            var picu = document.getElementById('lo');
+            picu.style.display = "none";
+            var picu1 = document.getElementById('si');
+            picu1.style.display = "none";
+            var im = document.getElementById('im');
+            im.style.display = "block";
+        }
+    </script>
+
+</body>
+
+</html>

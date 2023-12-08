@@ -1,0 +1,62 @@
+display: flex;
+    aspect-ratio: 16/9;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    box-shadow: 0 1.5rem 3rem -0.75rem hsla(0,0%,0%,0.25);
+    border-radius: 0.5rem;
+
+
+
+
+    var slide = ['food.jpg', 'food1.avif', 'food2.avif', 'food3.avif']
+
+        var start = 0
+        var imageduration = 5000
+
+        function slidershow() {
+            document.getElementById('image').src = slide[start]
+            start++
+            if (start == slide.length) {
+                start = 0
+            }
+            setTimeout("slidershow()", imageduration)
+        }
+        slidershow()
+
+
+        function but1() {
+            var originalDiv = document.getElementById('space');
+            var clonedDiv = originalDiv.cloneNode(false);
+            var clonedImg = document.createElement('img');
+            clonedImg.src = arr[0];
+            clonedDiv.appendChild(clonedImg);
+            document.body.appendChild(clonedDiv);
+        }
+
+        var blur = document.getElementById('blur');
+            blur.classList.toggle('active');
+
+            var blur = document.getElementById('blur1');
+            blur.classList.toggle('active');
+
+            var popup = document.getElementById('popup');
+            popup.classList.toggle('active');
+
+            var blu = document.getElementById('blur');
+            blu.style.pointerEvents="all";
+            blu.style.removeProperty('user-select');
+            blu.style.filter = 'none';
+
+            var blu2 = document.getElementById('blur1');
+            blu2.style.pointerEvents="auto";
+            blu2.style.removeProperty('user-select');
+            blu2.style.filter = 'none';
+
+            1. key point that i created the verify()
+
+            var newNestedDiv = clonedDiv.createElement("div");
+                newNestedDiv.className="card";
+
+                var newdiv = newNestedDiv.createElement('div');
+                newdiv.className="image";
